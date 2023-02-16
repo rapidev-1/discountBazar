@@ -1,4 +1,5 @@
-:where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-footer {
+:where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-footer,
+:where(.css-diro6f).ant-layout .ant-layout-footer {
   background-color: unset;
   padding: unset;
 }
