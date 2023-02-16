@@ -7,6 +7,11 @@
   background-color: var(--purpleColor);
   color: white;
   padding-block: 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .hamburger svg {
