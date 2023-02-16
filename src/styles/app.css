@@ -3,4 +3,6 @@
 @import "./vendor/index.css";
 @import "./user/index.css";
 @import "./theme/index.css";
+@import "./common/index.css";
+
 /* @import "./common/index.css"; */

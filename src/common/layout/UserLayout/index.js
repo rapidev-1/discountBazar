@@ -10,7 +10,7 @@ function UserLayout() {
     return (
         <Layout className='layout userlayout'>
             <Header style={{ background: 'unset', color: "unset" }}>
-                {/* <UserNav /> */}
+                <UserNav />
             </Header>
             <Content className='contentOutlet'>
                 <Outlet />
