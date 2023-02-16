@@ -4,15 +4,15 @@ function Cards({img,title,desc}) {
   return (
     <div className="cardFeature">
       <div className="card">
-        <div className="up">
-        <div className='icons'>
-          <DiscountBazarIcon text={""} icon={"cart"} />
-          <DiscountBazarIcon text={""} icon={"search"} />
-          <DiscountBazarIcon text={""} icon={"wishlist"} />
+        <div className="card-up">
+          <div className="card-icons">
+            <DiscountBazarIcon text={""} icon={"cart"} />
+            <DiscountBazarIcon text={""} icon={"search"} />
+            <DiscountBazarIcon text={""} icon={"wishlist"} />
+          </div> 
+          <img src={img} alt="loading...." className="card-image" />
         </div>
-          <img src={img} alt="loading...." className="image" />
-        </div>
-        <div className="down">
+        <div className="card-down">
           <strong>{title}</strong>
           <p>Rs {desc}</p>
         </div>
