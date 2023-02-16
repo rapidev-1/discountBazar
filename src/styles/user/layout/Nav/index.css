@@ -3,9 +3,9 @@
 @import "./mobilenav/index.css";
 
 :where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-header {
-  height: unset;
-  padding: 0px;
-  line-height: unset;
+  height: unset !important;
+  padding: 0px !important;
+  line-height: unset !important;
 }
 
 .navbar {
