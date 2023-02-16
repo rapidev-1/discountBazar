@@ -1,0 +1,23 @@
+:where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-footer {
+  background-color: unset;
+  padding: unset;
+}
+
+.userFooter {
+  background-color: var(--bgColor2);
+}
+.footerUpper,
+.footerLower {
+  padding: var(--py) var(--px);
+}
+.footerLower {
+  padding-block: calc(var(--py) * 1.5);
+  background-color: var(--pinkColorLighter);
+}
+
+@media screen and (max-width: 767px) {
+  .footerLower:nth-of-type(2) .ant-row .ant-row {
+    justify-content: flex-start;
+    padding-block: 0.5rem;
+  }
+}

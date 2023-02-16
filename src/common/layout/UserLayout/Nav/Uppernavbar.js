@@ -1,7 +1,9 @@
 import React from 'react'
 import { Row, Col } from "antd"
 import DiscountBazarIcon from '../../../Icons'
+import { useNavigate } from 'react-router-dom'
 function Uppernavbar() {
+  const navigate = useNavigate()
   return (
     <Row className='uppernav' justify={"space-between"}>
       <Col md={12} sm={24} xs={24}>
@@ -22,19 +24,24 @@ function Uppernavbar() {
         <Col xl={3} lg={4}>
           <DiscountBazarIcon
             dir={"rtl"}
+            icon={"user"}
             text={'login'}
-            icon={"user"} />
+            onClick={() => navigate('/login')}
+          />
         </Col>
         <Col xl={4} lg={5}>
           <DiscountBazarIcon
             dir={"rtl"}
             text={'wishlist'}
-            icon={"wishlist"} />
+            icon={"wishlist"}
+            onClick={() => navigate('/wishlist')}
+          />
         </Col>
         <Col xl={1} lg={1}>
           <DiscountBazarIcon
             dir={"rtl"}
             icon={"cart"}
+            onClick={() => navigate('/cart')}
           />
         </Col>
       </Col>

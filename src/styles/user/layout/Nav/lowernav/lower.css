@@ -1,0 +1,30 @@
+/* lower nav */
+.lowernav {
+  padding-block: calc(var(--py) * 2.2);
+  padding-inline: var(--px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgSoft);
+}
+.urlLinks {
+  color: var(--linkColor);
+  display: inline-block;
+  font-family: var(--Lato);
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+.urlLinks:hover {
+  color: var(--pinkColor);
+}
+
+.ant-input-search-button {
+  margin-top: -1px;
+  background-color: var(--pinkColor);
+}
+.ant-input-search-button:active,
+.ant-input-search-button:hover,
+.ant-input-search-button:focus {
+  background-color: var(--pinkColor) !important;
+}

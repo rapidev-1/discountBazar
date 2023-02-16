@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+}
+.vfcenter {
+  align-items: center;
+}
+.hfcenter {
+  justify-content: center;
+}
+.fdc {
+  flex-direction: column;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: flex-start;
+}

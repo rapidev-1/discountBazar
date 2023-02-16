@@ -1,57 +1,55 @@
-@import "../buttons//buttons.css";
-
-.Banner{
-    /* background-color: themed("homeBackground"); */
-     background-color: #6658c7;
-    z-index: 1 !important;
-    border: 1px solid;
-    width: 100%;
-    height: 550px;
+.Banner {
+  /* background-color: themed("homeBackground"); */
+  background-color: #6658c7;
+  z-index: 1 !important;
+  border: 1px solid;
+  width: 100%;
+  height: 550px;
 }
-    .slick-dots li button{
-            background-color: themed("colorPink") !important;
-        }
+.slick-dots li button {
+  background-color: themed("colorPink") !important;
+}
 
-.Banner-slider{
-    /* // border: 3px solid green; */
-    display: flex !important;
-    flex-direction: row;
-    height: 550px;
-   } 
-     .Banner-left{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-     }
-        .Banner-items{
-            width: 350px;
-            /* // border: 1px solid; */
-            margin-left:10%;
-              } 
-        .Banner-items > h1{
-            font-size: 2rem;
-             padding-bottom: 40px;
-            }
-        .Banner-items > p{
-            color:themed("colorPink");
-            }
+.Banner-slider {
+  /* // border: 3px solid green; */
+  display: flex !important;
+  flex-direction: row;
+  height: 550px;
+}
+.Banner-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Banner-items {
+  width: 350px;
+  /* // border: 1px solid; */
+  margin-left: 10%;
+}
+.Banner-items > h1 {
+  font-size: 2rem;
+  padding-bottom: 40px;
+}
+.Banner-items > p {
+  color: themed("colorPink");
+}
 
+.Banner-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .Banner-right{
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
-
-        .Banner-right > img{
-            height: 450px;
-            width: 300px;
-            object-fit: cover;
-        }
-        .Banner-img3{
-            height: 400px !important;
-            width: 400px !important;
-            object-fit: cover !important;
-        }
+.Banner-right > img {
+  height: 450px;
+  width: 300px;
+  object-fit: cover;
+}
+.Banner-img3 {
+  height: 400px !important;
+  width: 400px !important;
+  object-fit: cover !important;
+}

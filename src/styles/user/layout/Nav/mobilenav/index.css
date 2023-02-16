@@ -1,0 +1,21 @@
+.mobilenav {
+  padding-block: var(--py);
+  padding-inline: var(--px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--purpleColor);
+  color: white;
+  padding-block: 15px;
+}
+
+.hamburger svg {
+  font-size: 25px !important;
+}
+
+.drawerNav {
+  gap: 1.6rem;
+}
+.userDrawer .ant-drawer-header-title > button {
+  display: none;
+}

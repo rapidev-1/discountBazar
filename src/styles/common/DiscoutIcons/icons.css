@@ -1,0 +1,23 @@
+.DiscountBazarIconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: 500;
+}
+.DiscountBazarIconWrapper svg {
+  font-size: 1rem;
+}
+
+.DiscountBazarIconWrapper.rtl .icontext {
+  order: -1;
+}
+
+.footerIcon:hover svg {
+  color: var(--pinkColor) !important;
+}
+.footerIcon svg {
+  font-size: 1.2rem;
+}

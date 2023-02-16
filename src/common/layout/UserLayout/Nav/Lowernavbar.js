@@ -18,15 +18,15 @@ function Lowernavbar() {
     <Row className='lowernav' justify={"space-between"}>
       <Col md={12} sm={24} xs={24}>
         <Row style={{ width: "100%" }} align="middle">
-          <Col xl={6} lg={4}>
+          <Col xl={6} lg={7}>
             <Logo />
           </Col>
           <Row gutter={[30, 30]}>
             {
-              Links.map((e) => {
+              Links.map((e, i) => {
                 return (
-                  <Col>
-                    <Link to={e.url} key={e.title} className="urlLinks">
+                  <Col key={i}>
+                    <Link to={e.url} className="urlLinks">
                       {e.title}
                     </Link>
                   </Col>
@@ -36,8 +36,8 @@ function Lowernavbar() {
           </Row>
         </Row>
       </Col>
-      <Col md={12} sm={24} xs={24}>
-        <Col xl={11} lg={10}>
+      <Col md={12} sm={24} xs={24} className="flex flex-end">
+        <Col xl={14} lg={14}>
           <Search
             placeholder="input search text"
             enterButton={
