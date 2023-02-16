@@ -9,15 +9,15 @@ const { Header, Footer, Content } = Layout;
 function UserLayout() {
     return (
         <Layout className='layout userlayout'>
-            <Header style={{ background: 'unset', color: "unset" }}>
-                <UserNav />
-            </Header>
+            {/* <Header style={{ background: 'unset', color: "unset" }}> */}
+            {/* <UserNav /> */}
+            {/* </Header> */}
             <Content className='contentOutlet'>
                 <Outlet />
             </Content>
-            <Footer>
-                <UserFooter />
-            </Footer>
+            {/* <Footer> */}
+            {/* <UserFooter /> */}
+            {/* </Footer> */}
         </Layout>
     )
 }
