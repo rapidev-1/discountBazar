@@ -41,7 +41,7 @@ const UserFooter = () => (
     <Row gutter={[0, 20]} className="userFooter">
         <Col span={24} className="footerUpper">
             <Row gutter={[20, 20]}>
-                <Col md={7} sm={24} xs={24}>
+                <Col lg={7} md={24} sm={24} xs={24}>
                     <Logo />
                     <Input.Search
                         style={{ marginTop: "40px" }}
@@ -56,7 +56,7 @@ const UserFooter = () => (
                     />
                 </Col>
                 <Col md={0} lg={3} />
-                <Col md={4} sm={24} xs={24} className="footerCol">
+                <Col lg={4} md={24} sm={24} xs={24} className="footerCol">
                     <h2>{Categories.title}</h2>
                     <ul>
                         {
@@ -73,7 +73,7 @@ const UserFooter = () => (
                         }
                     </ul>
                 </Col>
-                <Col md={5} sm={24} xs={24} className="footerCol">
+                <Col lg={5} md={24} sm={24} xs={24} className="footerCol">
                     <h2>{CustomerCare.title}</h2>
                     <ul>
                         {
@@ -90,7 +90,7 @@ const UserFooter = () => (
                         }
                     </ul>
                 </Col>
-                <Col md={4} sm={24} xs={24} className="footerCol">
+                <Col lg={4} md={24} sm={24} xs={24} className="footerCol">
                     <h2>{Pages.title}</h2>
                     <ul>
                         {
