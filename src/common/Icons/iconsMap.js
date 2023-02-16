@@ -5,10 +5,12 @@ import { FaRegHeart, FaFacebook } from "react-icons/fa"
 import { FiMenu } from "react-icons/fi"
 import { BsTwitter } from "react-icons/bs"
 import { AiFillInstagram } from "react-icons/ai"
+import { RiSendPlane2Fill } from "react-icons/ri"
 
 const cn = 'DiscountBazarIcon'
 export const iconmap = {
     'email': <HiOutlineMail className={cn} />,
+    'send': <RiSendPlane2Fill className={cn} />,
     'call': <BiPhoneCall className={cn} />,
     'cart': <FiShoppingCart className={cn} />,
     'user': <FiUser className={cn} />,

@@ -4,8 +4,10 @@ html {
   --pinkColor: #fb2e86;
   --purpleColor: #7e33e0;
   --linkColor: #0d0e43;
+  --textColorLigher: #8a8fb9;
   --bgSoft: rgb(254, 254, 254);
   --bgColor2: #eeeffb;
   --pinkColorLighter: #e7e4f8;
   --Lato: "Lato";
+  --Josefin: "Josefin Sans";
 }

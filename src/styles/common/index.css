@@ -2,3 +2,7 @@
 @import "./DiscoutIcons/icons.css";
 @import "./utility/utlity.css";
 @import "./Logo/logo.css";
+
+body {
+  font-family: var(--Josefin);
+}

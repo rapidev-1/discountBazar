@@ -1,42 +1,110 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Input, Button, Row, Col } from 'antd';
+import { Input, Row, Col } from 'antd';
 import DiscountBazarIcon from "../../../Icons"
+import Logo from "../../../Logo"
+import { Link } from "react-router-dom"
 
+const Categories = {
+    title: "Categories",
+    array: [
+        { title: "Games", url: "/categories/games" },
+        { title: "Tablets", url: "/categories/tablets" },
+        { title: "Cameras", url: "/categories/cameras" },
+        { title: "Computers", url: "/categories/computers" },
+        { title: "Waterproof", url: "/categories/waterproof" },
+    ]
+}
+
+const CustomerCare = {
+    title: "Customer Care",
+    array: [
+        { title: "FAQs", url: "/faqs" },
+        { title: "MY Account", url: "/profile" },
+        { title: "Privacy Policy", url: "/privacypoilicy" },
+        { title: "Orders History", url: "/orderhistory" },
+        { title: "Order Tracking", url: "/ordertracking" },
+    ]
+}
+
+const Pages = {
+    title: "Pages",
+    array: [
+        { title: "Home", url: "/" },
+        { title: "Shop", url: "/shop" },
+        { title: "Contact", url: "/contact" },
+        { title: "Products", url: "/products" },
+        { title: "Login", url: "/login" },
+    ]
+}
+const onSearch = () => { }
 const UserFooter = () => (
     <Row gutter={[0, 20]} className="userFooter">
         <Col span={24} className="footerUpper">
             <Row gutter={[20, 20]}>
-                <Col md={8} sm={24} xs={24}>
-                    <h3 style={{ fontWeight: 'bold' }}>Column 1</h3>
-                    <img src="logo.png" alt="logo" style={{ height: '50px', marginBlock: "20px" }} />
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-
-                        <Input placeholder="Enter your email" />
-                        <Button type="primary">Subscribe</Button>
-                    </div>
+                <Col md={7} sm={24} xs={24}>
+                    <Logo />
+                    <Input.Search
+                        style={{ marginTop: "40px" }}
+                        placeholder="Enter Your Email"
+                        enterButton={
+                            <DiscountBazarIcon
+                                icon={"send"}
+                            />
+                        }
+                        size="middle"
+                        onSearch={onSearch}
+                    />
                 </Col>
-                <Col md={5} sm={24} xs={24}>
-                    <h3 style={{ fontWeight: 'bold' }}>Column 2</h3>
+                <Col md={0} lg={3} />
+                <Col md={4} sm={24} xs={24} className="footerCol">
+                    <h2>{Categories.title}</h2>
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
+                        {
+                            Categories.array.map((e, i) => {
+                                return (
+                                    <Link
+                                        className='urlLinks'
+                                        to={e.url}
+                                        key={i}>
+                                        {e.title}
+                                    </Link>
+                                )
+                            })
+                        }
                     </ul>
                 </Col>
-                <Col md={5} sm={24} xs={24}>
-                    <h3 style={{ fontWeight: 'bold' }}>Column 3</h3>
+                <Col md={5} sm={24} xs={24} className="footerCol">
+                    <h2>{CustomerCare.title}</h2>
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
+                        {
+                            CustomerCare.array.map((e, i) => {
+                                return (
+                                    <Link
+                                        className='urlLinks'
+                                        to={e.url}
+                                        key={i}>
+                                        {e.title}
+                                    </Link>
+                                )
+                            })
+                        }
                     </ul>
                 </Col>
-                <Col md={6} sm={24} xs={24}>
-                    <h3 style={{ fontWeight: 'bold' }}>Column 4</h3>
+                <Col md={4} sm={24} xs={24} className="footerCol">
+                    <h2>{Pages.title}</h2>
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
+                        {
+                            Pages.array.map((e, i) => {
+                                return (
+                                    <Link
+                                        className='urlLinks'
+                                        to={e.url}
+                                        key={i}>
+                                        {e.title}
+                                    </Link>
+                                )
+                            })
+                        }
                     </ul>
                 </Col>
             </Row>
