@@ -12,8 +12,8 @@
         }
             .card-up {
                 position: relative;
+                background-color: var(--lightblueBg);
                 display: flex !important;
-                background-color: themed("homeBackground");
                 justify-content: center;
                 align-items: center;
                 gap: 0.6rem;
@@ -47,6 +47,7 @@
 
             .card-down {
                 flex: 1;
+                background-color: white;
                 /* // border: 1px solid; */
                 display: flex !important;
                 flex-direction: column;
@@ -54,29 +55,38 @@
                 align-items: center;
             }
             .card-down > strong {
-                color: themed("colorPink");
+                color: var(--pinkColor);
                 font-size: 1.2rem;
                 }
 
             .card-down > p{
-                color: themed("darkHeading");
+                color: var(--headingPurpleColor2);
                 font-size: 1rem;
                 }
 
-        .card:hover{
+        .card:hover .card-up {
             cursor: pointer;
+            transition: ease-in-out 0.7s;
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.2);
         }
-            .card-up:hover{
-                transition: ease-in-out 0.7s;
-                opacity: 1;
-                background-color: rgba(0, 0, 0, 0.2);
+            .card:hover{
+                cursor: pointer;
             }
-                .card-icons:hover {
+                           .card:hover .card-icons{
                     transition: ease-in-out 0.7s;
                     opacity: 1;
                 }
-            .card-down:hover{
+                   .card:hover .card-down{
                 background-color: #2F1AC4;
                 transition: ease-in-out 0.7s;
+                color: white;
+            }
+                   .card:hover .card-down > strong{
+                    transition: ease-in-out 0.7s;
+                color: white;
+            }
+                   .card:hover .card-down > p{
+                    transition: ease-in-out 0.7s;
                 color: white;
             }

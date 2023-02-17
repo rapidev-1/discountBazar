@@ -8,38 +8,41 @@
          height: 100%;
          width: 100%;
  }
+ .react-multi-carousel-dot--active button {
+    background: var(--pinkColor);
+}
+ .react-multi-carousel-dot button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 1;
+    padding: 5px 5px 5px 5px;
+    box-shadow: none;
+    transition: background .5s;
+    border-width: 1px;
+    border-style: solid;
+    /* border-color:var(--pinkColor); */
+    border-color:lightcoral;
+    padding: 0;
+    margin: 0;
+    margin-right: 6px;
+    outline: 0;
+    cursor: pointer;
+}
         .featuredProducts > h1 {
         text-align: center;
         padding: 10px;
-        color: themed("darkHeading");
+        color: var(--headingPurpleColor2);
         font-size: 42px;
          }
 
          .featured {
-             /* // background-color: #6658c7; */
-             display: flex !important;
-             justify-content: center;
-             align-items: center;
              z-index: 1 !important;
-             /* // border:1px solid; */
-             width: 100%;
+             /* border:1px solid; */
+             width: 90%;
+             margin: auto;
              height: 100%;
+             padding-bottom: 40px;
+             margin-bottom: 40px;
          }
-             .slick-dots li button {
-                 background-color: pink !important;
-             }
-
-             .featured-items {
-                 height: 100%;
-                 margin: 30px;
-                 display: flex !important;
-                 justify-content: center;
-                 flex-wrap: wrap;
-                 padding: 20px;
-                 /* // border: 1px solid; */
-                 align-items: center;
-                 gap: 1rem;
-
-             }
-
-  

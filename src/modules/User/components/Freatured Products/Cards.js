@@ -2,7 +2,7 @@ import React from 'react'
 import DiscountBazarIcon from "../../../../common/Icons";
 function Cards({img,title,desc}) {
   return (
-    <div className="cardFeature">
+    <div className="cardFeature"> 
       <div className="card">
         <div className="card-up">
           <div className="card-icons">
