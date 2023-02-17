@@ -28,7 +28,7 @@ function Slider() {
           </div>
         </div>
         <div className="Banner-slider">
-          <div className="Banner-left"> 
+          <div className="Banner-left">
             <div className="Banner-items">
               <p>Best furniture for your castle.....</p>
               <h1>New Watch Collection Trends in 2023</h1>
