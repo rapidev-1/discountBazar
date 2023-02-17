@@ -3,7 +3,7 @@
   color: white;
   background-color: var(--purpleColor);
   padding-block: var(--py);
-  padding-inline: var(--px);
+  padding-inline: var(--px); 
 }
 
 .uppernav > .ant-col:nth-of-type(1),
