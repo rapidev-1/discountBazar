@@ -1,0 +1,38 @@
+@import "./content.css";
+
+.LatestTabs {
+  padding-inline: var(--px);
+}
+.LatestTabs .ant-tabs-nav::before {
+  display: none;
+}
+.LatestTabs .ant-tabs-ink-bar {
+  background-color: var(--pinkColor);
+  height: 1.1px !important;
+  bottom: 22% !important;
+}
+
+.LatestTabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--pinkColor) !important;
+}
+.LatestTabs .ant-tabs-tab-btn:hover,
+.LatestTabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+  color: var(--pinkColor) !important;
+}
+.LatestTabs .ant-tabs-tab-btn {
+  font-family: var(--Lato);
+  color: var(--headingColor);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.LatestTabs .ant-tabs-nav-wrap {
+  min-width: 500px;
+  max-width: 550px;
+  margin: auto;
+}
+.LatestTabs .ant-tabs-nav-list {
+  justify-content: space-between !important;
+  user-select: none;
+  width: 100%;
+}

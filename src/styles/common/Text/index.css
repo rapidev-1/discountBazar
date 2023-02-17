@@ -1,0 +1,8 @@
+.ant-typography.HeadingDark {
+  color: var(--headingColor);
+  font-size: 42px;
+  font-weight: 600;
+  font-family: var(--Josefin);
+  user-select: none;
+  margin-bottom: 12px;
+}
