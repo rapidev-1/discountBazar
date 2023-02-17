@@ -1,0 +1,29 @@
+.LatestProductCard {
+  text-align: center;
+  width: 100%;
+}
+.LatestProductCard img {
+  height: 280px;
+  object-fit: contain;
+  background-color: var(--grey);
+  padding: 2rem;
+}
+
+.LatestProductCard .ant-card-body {
+  padding-inline: calc(var(--py) * 10);
+  padding-block: calc(var(--py) * 13);
+}
+
+.LatestProductCardMeta {
+  color: var(--headingColor);
+}
+.LatestProductCardMeta .ant-card-meta-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.LatestProductCardMeta .ant-card-meta-title,
+.LatestProductCardMeta .ant-card-meta-description {
+  color: var(--headingColor);
+  margin: 0px !important;
+}
