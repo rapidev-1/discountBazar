@@ -1,33 +1,26 @@
 import React from "react";
-import { watches,TELE,FOOTBALL,pc} from "../../../../utility/FeaturedProducts";
-import { Carousel } from "antd";
+import Carousel from "react-multi-carousel";
+import {
+  watches,
+  responsiveSliderCards,
+} from "../../../../utility/FeaturedProducts";
 import Cards from "./Cards";
+import "react-multi-carousel/lib/styles.css";
 function Featureproducts() {
   return (
     <div className="featuredProducts">
       <h1>Featured Products</h1>
-      <Carousel autoplay className="featured">
-        <div className="featured-items">
-          {watches.map((e) => (
-            <Cards img={e.img} title={e.title} desc={e.desc} />
+        <Carousel
+          className="featured"
+          responsive={responsiveSliderCards}
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+        >
+          {watches.map((e, i) => (
+            <Cards id={i} img={e.img} title={e.title} desc={e.desc} />
           ))}
-        </div>
-        <div className="featured-items">
-          {TELE.map((e) => (
-            <Cards img={e.img} title={e.title} desc={e.desc} />
-          ))}
-        </div>
-        <div className="featured-items">
-          {FOOTBALL.map((e) => (
-            <Cards img={e.img} title={e.title} desc={e.desc} />
-          ))}
-        </div>
-        <div className="featured-items">
-          {pc.map((e) => (
-            <Cards img={e.img} title={e.title} desc={e.desc} />
-          ))}
-        </div>
-      </Carousel>
+        </Carousel>
     </div>
   );
 }
