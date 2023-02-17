@@ -1,13 +1,14 @@
 .Banner {
   /* background-color: themed("homeBackground"); */
-  background-color: #6658c7;
+  background-color: var(--grayBlueBg);
   z-index: 1 !important;
   border: 1px solid;
   width: 100%;
   height: 550px;
 }
-.slick-dots li button {
-  background-color: themed("colorPink") !important;
+.slick-dots li button{
+  background-color:var(--pinkColor) !important;
+  /* color: green !important; */
 }
 
 .Banner-slider {
@@ -33,7 +34,7 @@
   padding-bottom: 40px;
 }
 .Banner-items > p {
-  color: themed("colorPink");
+  color:  var(--pinkColor);
 }
 
 .Banner-right {
