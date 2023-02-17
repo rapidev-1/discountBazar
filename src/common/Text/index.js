@@ -1,0 +1,1 @@
+export { default as CenterHeading } from "./CenterHeading"
