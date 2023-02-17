@@ -1,0 +1,6 @@
+@import "./card.css";
+
+.LatestProductContent {
+  padding-block: calc(var(--py) * 5);
+  user-select: none;
+}

@@ -1,7 +1,9 @@
+@import "./antd/index.css";
 @import "./buttons/buttons.css";
 @import "./DiscoutIcons/icons.css";
 @import "./utility/utlity.css";
 @import "./Logo/logo.css";
+@import "./Text/index.css";
 
 body {
   font-family: var(--Josefin);

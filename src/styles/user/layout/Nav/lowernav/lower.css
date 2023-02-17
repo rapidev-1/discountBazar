@@ -19,9 +19,15 @@
   color: var(--pinkColor);
 }
 
+.ant-input-group-addon {
+  max-height: 33px !important;
+}
 .ant-input-search-button {
-  margin-top: -1px;
+  margin-top: -1px !important;
   background-color: var(--pinkColor);
+}
+.ant-input-search input {
+  min-height: 33px !important;
 }
 .ant-input-search-button:active,
 .ant-input-search-button:hover,
