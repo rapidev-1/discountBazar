@@ -8,9 +8,11 @@
   height: 100%;
   width: 100%;
 }
+
 .react-multi-carousel-dot--active button {
   background: var(--pinkColor);
 }
+
 .react-multi-carousel-dot button {
   display: inline-block;
   width: 12px;
@@ -19,10 +21,9 @@
   opacity: 1;
   padding: 5px 5px 5px 5px;
   box-shadow: none;
-  transition: background 0.5s;
+  transition: background .5s;
   border-width: 1px;
   border-style: solid;
-  /* border-color:var(--pinkColor); */
   border-color: lightcoral;
   padding: 0;
   margin: 0;
@@ -30,7 +31,8 @@
   outline: 0;
   cursor: pointer;
 }
-.featuredProducts > h1 {
+
+.featuredProducts>h1 {
   text-align: center;
   padding: 10px;
   color: var(--headingPurpleColor2);
@@ -39,8 +41,8 @@
 
 .featured {
   z-index: 1 !important;
-  /* border:1px solid; */
   width: 90%;
+  padding-left: 7px;
   margin: auto;
   height: 100%;
   padding-bottom: 40px;
