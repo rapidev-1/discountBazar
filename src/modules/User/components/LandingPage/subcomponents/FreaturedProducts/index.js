@@ -18,7 +18,7 @@ function Featureproducts() {
         showDots={true}
       >
         {watches.map((e, i) => (
-          <Cards id={i} img={e.img} title={e.title} desc={e.desc} />
+          <Cards id={i} key={i} img={e.img} title={e.title} desc={e.desc} />
         ))}
       </Carousel>
     </div>
