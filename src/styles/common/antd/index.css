@@ -1,6 +1,6 @@
 .ant-layout {
-  background-color: var(--bgSoft);
-  background-color: white;
+  /* background-color: var(--bgSoft); */
+  background-color: white !important;
 }
 
 :where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-header,

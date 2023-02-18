@@ -3,17 +3,19 @@ html {
   --py: 0.6%;
   --pinkColor: #fb2e86;
   --purpleColor: #7e33e0;
-  --linkColor: #0d0e43; 
+  --linkColor: #0d0e43;
   --headingColor: #151875;
   --textColorLigher: #8a8fb9;
   --bgSoft: rgb(254, 254, 254);
   --bgColor2: #eeeffb;
-  --headingPurpleColor2: #1A0B5B;
+  --headingPurpleColor2: #1a0b5b;
   --pinkColorLighter: #e7e4f8;
-  --grayBlueBg:#F2F0FF;
-  --lightblueBg:#F6F7FB;
+  --grayBlueBg: #f2f0ff;
+  --lightblueBg: #f6f7fb;
   --grayBlueBg: #f2f0ff;
   --grey: #f7f7f7;
-   --Lato: "Lato";
+  --shadow1: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%);
+
+  --Lato: "Lato";
   --Josefin: "Josefin Sans";
 }

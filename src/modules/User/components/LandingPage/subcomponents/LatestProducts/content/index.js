@@ -11,11 +11,11 @@ function LatestProductContent({ value }) {
     }, [value])
     return (
         <div className='LatestProductContent'>
-            <Row gutter={[20, 60]} justify='center'>
+            <Row gutter={[20, 60]} justify="space-between">
                 {
                     products?.map((e, i) => {
                         return (
-                            <Col lg={7} md={12} sm={24} xs={24}>
+                            <Col lg={8} md={12} sm={24} xs={24} key={i}>
                                 <LatestProductCard data={e} />
                             </Col>
                         )

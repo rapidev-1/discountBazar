@@ -1,7 +1,6 @@
 import { Card } from 'antd'
 import React from 'react'
-import DiscountBazarIcon from '../../../../../../common/Icons'
-
+import DiscountBazarIcon from '../../../../../../../../common/Icons'
 function LatestProductCard({ data }) {
     return (
         <Card
