@@ -1,5 +1,5 @@
-import { Col, Row, Tabs } from 'antd';
-import { CenterHeading } from "../../../../common/Text"
+import { Col, Row, Tabs } from 'antd'
+import { CenterHeading } from "../../../../../../common/Text"
 import LatestProductContent from './content';
 const onChange = (key) => {
     console.log(key);
