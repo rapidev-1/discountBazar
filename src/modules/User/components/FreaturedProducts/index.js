@@ -10,17 +10,19 @@ function Featureproducts() {
   return (
     <div className="featuredProducts">
       <h1>Featured Products</h1>
-        <Carousel
-          className="featured"
-          responsive={responsiveSliderCards}
-          swipeable={true}
-          draggable={true}
-          showDots={true}
-        >
-          {watches.map((e, i) => (
-            <Cards id={i} img={e.img} title={e.title} desc={e.desc} />
-          ))}
-        </Carousel>
+      <Carousel
+        className="featured"
+        responsive={responsiveSliderCards}
+        autoPlay={true}
+        autoPlaySpeed={1000}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+      >
+        {watches.map((e, i) => (
+          <Cards id={i} img={e.img} title={e.title} desc={e.desc} />
+        ))}
+      </Carousel>
     </div>
   );
 }
