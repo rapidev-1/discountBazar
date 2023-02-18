@@ -22,7 +22,6 @@
     transition: background .5s;
     border-width: 1px;
     border-style: solid;
-    /* border-color:var(--pinkColor); */
     border-color:lightcoral;
     padding: 0;
     margin: 0;
