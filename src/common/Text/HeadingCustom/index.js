@@ -1,16 +1,16 @@
 import { Grid, Row, Typography } from 'antd'
 import React from 'react'
 
-function CenterHeading({ heading }) {
+function HeadingCustom({ heading, level }) {
     const breakpoints = Grid.useBreakpoint()
     const condition = breakpoints['sm'] || breakpoints['xs']
     return (
-        <Row justify={"center"}>
+        <Row>
             <Typography>
                 <Typography.Title
-                    level={2}
+                    level={level ? level : 2}
                     ellipsis={{ rows: condition ? 2 : 1 }}
-                    className="HeadingDark">
+                    className="HeadingDark HeadingCustom">
                     {heading}
                 </Typography.Title>
             </Typography>
@@ -18,4 +18,4 @@ function CenterHeading({ heading }) {
     )
 }
 
-export default CenterHeading
+export default HeadingCustom

@@ -9,8 +9,8 @@
   height: 550px;
   margin-top: 70px;
 }
-.slick-dots li button{
-  background-color:var(--pinkColor) !important;
+.slick-dots li button {
+  background-color: var(--pinkColor) !important;
   /* color: green !important; */
 }
 
@@ -23,14 +23,15 @@
 }
 .Banner-left {
   flex: 1;
-  display: flex;border: 1px solid;
+  display: flex;
+  border: 1px solid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .Banner-items {
   width: 350px;
-  overflow:default !important;
+  overflow: default !important;
   margin-bottom: 60px;
   /* // border: 1px solid; */
   margin-left: 10%;
@@ -40,7 +41,7 @@
   padding-bottom: 40px;
 }
 .Banner-items > p {
-  color:  var(--pinkColor);
+  color: var(--pinkColor);
 }
 .Banner-right {
   flex: 1;
@@ -51,7 +52,7 @@
   align-items: center;
   overflow-y: visible !important;
 }
-.banner-gradient-one{
+.banner-gradient-one {
   display: flex;
   /* position: absolute;
   top:0px !important;
@@ -59,7 +60,7 @@
   width: 60%;
   /* border: 1px solid; */
   position: relative;
-  background-image: radial-gradient(#ECD2FA,#ECD2FA);
+  background-image: radial-gradient(#ecd2fa, #ecd2fa);
   opacity: 0.5;
   border-radius: 50%;
   height: 70%;
@@ -67,36 +68,36 @@
   justify-content: center;
   align-items: center;
 }
-.banner-gradient-two{
+.banner-gradient-two {
   position: absolute;
-  top:-25px;
-  left:30px;
+  top: -25px;
+  left: 30px;
   z-index: -1;
   opacity: 0.5;
-    display: flex;
-    /* border: 1px solid; */
-    width: 100%;
-    margin-bottom: 89px;
-      height:100%;
-      background-image: radial-gradient(#ECD2FA,#ECD2FA );
-      border-radius:50%;
-      justify-content: center;
-      align-items: center;
+  display: flex;
+  /* border: 1px solid; */
+  width: 100%;
+  margin-bottom: 89px;
+  height: 100%;
+  background-image: radial-gradient(#ecd2fa, #ecd2fa);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
-.banner-gradient-three{
+.banner-gradient-three {
   position: absolute;
-  bottom:-25px;
-  right:30px;
+  bottom: -25px;
+  right: 30px;
   z-index: -1;
   opacity: 0.5;
-    display: flex;
-    /* border: 1px solid; */
-    width: 100%;
-      height:100%;
-      background-image: radial-gradient(#ECD2FA,#ECD2FA );
-      border-radius:50%;
-      justify-content: center;
-      align-items: center;
+  display: flex;
+  /* border: 1px solid; */
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ecd2fa, #ecd2fa);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 .Banner-right > img {
   height: 450px;

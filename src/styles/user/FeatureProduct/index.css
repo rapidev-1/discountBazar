@@ -7,6 +7,7 @@
   margin-top: 80px;
   height: 100%;
   width: 100%;
+  padding-inline: var(--px);
 }
 
 .react-multi-carousel-dot--active button {
@@ -21,7 +22,7 @@
   opacity: 1;
   padding: 5px 5px 5px 5px;
   box-shadow: none;
-  transition: background .5s;
+  transition: background 0.5s;
   border-width: 1px;
   border-style: solid;
   border-color: lightcoral;
@@ -32,7 +33,7 @@
   cursor: pointer;
 }
 
-.featuredProducts>h1 {
+.featuredProducts > h1 {
   text-align: center;
   padding: 10px;
   color: var(--headingPurpleColor2);
@@ -41,9 +42,9 @@
 
 .featured {
   z-index: 1 !important;
-  width: 90%;
+  width: 100%;
   padding-left: 7px;
-  margin: auto;
+  /* margin: auto; */
   height: 100%;
   padding-bottom: 40px;
   margin-bottom: 40px;

@@ -15,3 +15,7 @@
   background-color: unset;
   padding: unset;
 }
+
+.ant-row {
+  max-width: 100%;
+}
