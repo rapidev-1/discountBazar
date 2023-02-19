@@ -1,0 +1,10 @@
+.BannerShopNow {
+  height: 400px;
+}
+.BannerShopNow .ant-col {
+  background-position: bottom !important;
+  background-attachment: fixed;
+  height: auto;
+  will-change: scroll-position;
+  text-align: center;
+}

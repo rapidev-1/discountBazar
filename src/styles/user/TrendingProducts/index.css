@@ -1,0 +1,13 @@
+@import "./card2/index.css";
+@import "./card3/index.css";
+
+.TreningProducts {
+  padding-inline: var(--px);
+  margin-block: calc(var(--py) * 5);
+}
+
+.LatestProductContent .ant-row:nth-of-type(2) .ant-col > * {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}

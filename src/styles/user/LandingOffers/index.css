@@ -1,10 +1,15 @@
 .LandingOffers {
   padding-inline: var(--px);
+  user-select: none;
 }
 .offerCard {
   box-shadow: var(--shadow1);
   padding: calc(var(--py) * 15) calc(var(--py) * 3);
   border: unset;
+  border-bottom: 3px solid transparent;
+}
+.offerCard:hover {
+  border-bottom: 3px solid var(--pinkColor);
 }
 .offerCard .ant-card-cover {
   padding-block: calc(var(--py) * 20) calc(var(--py) * 8);

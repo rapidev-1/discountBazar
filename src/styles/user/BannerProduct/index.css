@@ -1,0 +1,110 @@
+.BannerProduct {
+  border: unset;
+}
+.BannerProduct {
+  padding-inline: calc(var(--px) / 2);
+}
+
+.BannerProduct .Banner-left {
+  align-items: flex-start;
+  border: unset;
+}
+.BannerProduct .Banner-items {
+  margin-left: 0px !important;
+}
+
+.BannerProduct .Banner-right {
+  border: unset;
+  order: -1;
+  align-items: center;
+}
+.BannerProduct img {
+  left: 0;
+  margin-bottom: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: unset;
+  object-fit: contain;
+}
+
+.BannerProduct .Banner-items {
+  width: 100%;
+}
+.BannerProduct h1 {
+  padding-bottom: 0px;
+  color: var(--headingColor);
+  font-family: var(--Josefin);
+  font-weight: 600;
+}
+.BannerProduct ul {
+  padding: calc(var(--py) * 4) calc(var(--py) * 12);
+  color: var(--textColorLigher);
+  font-family: var(--Lato);
+  flex-direction: column;
+  font-weight: 500;
+  list-style: none;
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.BannerProduct li {
+  position: relative;
+}
+.BannerProduct ul li::before {
+  left: -7%;
+  top: 4px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--purpleColor);
+}
+.BannerProduct ul li:nth-of-type(2):before {
+  background-color: var(--pinkColor);
+}
+
+.BannerProduct ul li:nth-of-type(3):before {
+  background-color: var(--headingColor);
+}
+
+@media screen and (max-width: 992px) {
+  .BannerProduct {
+    height: unset;
+    padding-block: calc(var(--py) * 8);
+  }
+  .BannerProduct .Banner-slider {
+    flex-direction: column;
+    height: unset;
+  }
+  .BannerProduct .Banner-right {
+    min-height: 400px;
+  }
+  .BannerProduct img {
+    /* height: 330px; */
+    /* width: 430px; */
+    max-width: 95%;
+    object-fit: contain;
+  }
+  .BannerProduct .banner-gradient-one,
+  .BannerProduct .banner-gradient-two,
+  .BannerProduct .banner-gradient-three {
+    min-height: 330px;
+    width: 95%;
+    max-width: 350px;
+  }
+  .BannerProduct h1 {
+    font-size: 1.6rem;
+  }
+  .BannerProduct ul {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .BannerProduct ul {
+    font-size: 0.85rem;
+  }
+}

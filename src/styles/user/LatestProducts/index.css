@@ -1,7 +1,9 @@
 @import "./content.css";
 
 .LatestTabs {
+  padding: unset;
   padding-inline: var(--px);
+  max-width: 100%;
 }
 .LatestTabs .ant-tabs-nav::before {
   display: none;
@@ -35,4 +37,20 @@
   justify-content: space-between !important;
   user-select: none;
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .LatestTabs .ant-tabs-nav-wrap {
+    min-width: unset;
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .LatestTabs .ant-tabs-tab-btn {
+    font-size: 12px;
+  }
+  .LatestTabs .ant-tabs-tab + .ant-tabs-tab {
+    margin-left: 22px;
+  }
 }

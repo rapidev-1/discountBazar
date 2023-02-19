@@ -1,0 +1,22 @@
+.TrendingCard2 {
+  background-color: var(--pinkColorLighter);
+}
+.TrendingCard2 .ant-typography:first-child {
+  margin-bottom: 0;
+}
+.TrendingCard2 .ant-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.TrendingCard2 img {
+  align-self: flex-end;
+}
+.TrendingCard2 button {
+  border-bottom: 1.3px solid var(--pinkColor);
+  color: var(--pinkColor);
+
+  font-weight: 600;
+  border-radius: 0;
+  padding: 0;
+}

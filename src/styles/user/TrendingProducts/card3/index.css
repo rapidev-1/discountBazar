@@ -1,0 +1,27 @@
+.TrendingCard3 .ant-col {
+  display: flex;
+}
+.TrendingCard3 .ant-typography.HeadingCustom {
+  font-family: var(--Josefin);
+  font-size: 1rem;
+}
+.TrendingCard3 .ant-row:first-of-type .ant-typography .ant-typography {
+  margin-top: 5px;
+}
+.TrendingCard3 .ant-row:last-of-type .ant-typography .ant-typography {
+  margin-bottom: 0;
+}
+.TrendingCard3 img {
+  background-color: var(--grey);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+  width: 70px;
+  /* height: 80px !important; */
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .TrendingCard3 .ant-typography.HeadingCustom:first-of-type {
+    font-size: 1rem !important;
+  }
+}

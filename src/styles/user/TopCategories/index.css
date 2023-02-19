@@ -1,0 +1,57 @@
+.TopCategoriesCard {
+  user-select: none;
+}
+.TopCategoriesCard .card {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  margin: auto;
+}
+
+.TopCategoriesCard .card img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+.TopCategoriesCard:hover .card img {
+  margin-bottom: 40px;
+}
+.TopCategoriesCard .card {
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.TopCategoriesCard:hover .card {
+  border-left: 6px solid var(--purpleColor);
+  border-bottom: 6px solid var(--purpleColor);
+}
+.TopCategoriesCard .card-down {
+  font-weight: 500;
+  font-family: var(--Josefin);
+  color: var(--headingColor);
+  text-align: center;
+  display: block !important;
+  margin-block: 20px;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+.shopbutton {
+  background-color: var(--green);
+  color: white;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.TopCategoriesCard:hover .shopbutton {
+  opacity: 1;
+}
+.shopbutton:hover {
+  color: white !important;
+}

@@ -40,7 +40,7 @@ function LandingOffers() {
             <Col span={24}>
                 <CenterHeading heading={"What Discount Bazar Offer!"} />
             </Col>
-            <Col span={24} className="flex hfcenter">
+            <Col span={24} className="flex hfcenter" style={{ marginTop: "60px" }}>
                 <Row justify={"center"} gutter={[20, 20]}>
                     {
                         items.map((e, i) => {
