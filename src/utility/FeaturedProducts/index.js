@@ -16,22 +16,14 @@ export const responsiveSliderCards = {
     slidesToSlide: 1,
   },
   tablet: {
-<<<<<<< HEAD
-    breakpoint: { max: 1124, min: 630 },
-    items: 2,
-    slidesToSlide: 2,
-=======
     breakpoint: { max: 1024, min: 464 },
     items: 1,
     slidesToSlide: 1,
->>>>>>> 1f57d011093cd48586e8d9b0c7b7417b98b3ed4b
   },
   mobile: {
     breakpoint: { max: 630, min: 0 },
     items: 1,
     slidesToSlide: 1,
-<<<<<<< HEAD
-=======
   },
 };
 export const responsiveSliderCards2 = {
@@ -55,7 +47,6 @@ export const responsiveSliderCards2 = {
     breakpoint: { max: 464, min: 0 },
     items: 1,
     slidesToSlide: 1,
->>>>>>> 1f57d011093cd48586e8d9b0c7b7417b98b3ed4b
   },
 };
 export const watches = [

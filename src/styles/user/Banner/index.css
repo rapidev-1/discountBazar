@@ -59,13 +59,10 @@
   width: 60%;
   /* border: 1px solid; */
   position: relative;
-<<<<<<< HEAD
+ 
   background-image: radial-gradient(#ECD2FA,#ECD2FA);
   opacity: 0.7;
-=======
-  background-image: radial-gradient(#ecd2fa, #ecd2fa);
-  opacity: 0.5;
->>>>>>> 1f57d011093cd48586e8d9b0c7b7417b98b3ed4b
+ 
   border-radius: 50%;
   height: 70%;
   z-index: 2;
