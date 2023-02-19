@@ -4,15 +4,17 @@
 .about-section2-left{
     border: 1px solid;
     flex: 1;
-    /* padding:10px; */
+    /* padding:10px; */ 
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 .about-section2-left > img{
     border: 1px solid;
-    width: 570px;
-    height: 409px;
+    max-width: 570px;
+    min-width: 370px;
+    max-height: 409px;
+    min-height: 209px;
     object-fit: contain;
 }
 .about-section2-right{
@@ -22,7 +24,7 @@
 }
 .about-section2-right-item{
     border: 1px solid;
-    width: 80%;
+    width: 95%;
     line-height: 25.6px;
     font-family: var(--Lato);
     display: flex;
