@@ -12,6 +12,9 @@
   font-style: italic;
   text-align: left !important;
 }
+.ant-typography.small {
+  margin-bottom: 0px;
+}
 
 @media screen and (max-width: 992px) {
   .ant-typography.HeadingDark {

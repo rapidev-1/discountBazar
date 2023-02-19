@@ -1,19 +1,19 @@
-import { Button } from 'antd';
+import { Button, Typography } from 'antd';
 import aboutPic from "../../../../../../common/Images/about.png"
 import React from 'react'
 import { CenterHeading } from '../../../../../../common/Text';
 
 function index() {
   return (
-    <div className="about-section2">
+    <div className="about-section2 SectionPadding">
       <div className="about-section2-left">
         <img src={aboutPic} alt="loading..." />
       </div>
-      <div className="about-section2-right"> 
+      <div className="about-section2-right">
         <div className="about-section2-right-item">
-          <CenterHeading heading={"Know About Our Ecommerce"} />
-          <CenterHeading heading={"Business, History"} />
-          <p>
+          <CenterHeading heading={"Know About Our Ecommerce Business, History"} small />
+          {/* <CenterHeading heading={"Business, History"} small /> */}
+          <p className='p'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
