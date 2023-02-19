@@ -1,38 +1,70 @@
-.about-section2{
-    display: flex;
+.about-section2 {
+  display: flex;
+  padding-inline: var(--px);
 }
-.about-section2-left{
-    border: 1px solid;
-    flex: 1;
-    /* padding:10px; */ 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.about-section2-left,
+.about-section2-right {
+  flex: 100%;
 }
-.about-section2-left > img{
-    border: 1px solid;
-    max-width: 570px;
-    min-width: 370px;
-    max-height: 409px;
-    min-height: 209px;
-    object-fit: contain;
+.about-section2-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
 }
-.about-section2-right{
-    border: 1px solid;
-    padding: 20px;
-    flex: 1;
+.about-section2-left > img {
+  max-width: 480px;
+  min-width: 370px;
+  max-height: 409px;
+  min-height: 209px;
+  object-fit: contain;
 }
-.about-section2-right-item{
-    border: 1px solid;
-    width: 95%;
-    line-height: 25.6px;
-    font-family: var(--Lato);
-    display: flex;
+.about-section2-right {
+  max-width: 50%;
+  overflow: hidden !important;
+}
+.about-section2-right-item {
+  font-family: var(--Lato);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.p {
+  color: var(--textColorLigher);
+  font-size: 1rem;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4; /* for webkit */
+  -moz-box-lines: 4; /* for firefox */
+}
+@media screen and (max-width: 992px) {
+  .about-section2 {
     flex-direction: column;
-    justify-content: center;
-    align-items:flex-start ;
-}
-.about-section2-right-item > p{
-color: #8A8FB9;
-font-size: 16px;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-section2 > * {
+    min-width: 100%;
+  }
+
+  .about-section2-left {
+    display: block;
+    margin: unset;
+  }
+  .about-section2 img {
+    max-width: 100%;
+  }
+  .p {
+    -webkit-line-clamp: 8; /* for webkit */
+    -moz-box-lines: 8; /* for firefox */
+    text-align: justify;
+  }
 }
