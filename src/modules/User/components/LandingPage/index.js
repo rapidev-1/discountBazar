@@ -7,6 +7,7 @@ import LatestProducts from "./subcomponents/LatestProducts";
 import TrendingProducts from "./subcomponents/TrendingProducts";
 import Featureproducts from "./subcomponents/FreaturedProducts";
 import BannerShopNow from "./subcomponents/BannerShopNow";
+import DiscountItem from "./subcomponents/DiscountProduct";
 
 function LandingPage() {
   return (
@@ -19,6 +20,7 @@ function LandingPage() {
       <TrendingProducts />
       <TopCategories />
       <BannerShopNow />
+      <DiscountItem />
     </div>
   );
 }
