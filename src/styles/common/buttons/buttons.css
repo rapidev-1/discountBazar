@@ -1,3 +1,11 @@
 .btn {
   background-color: var(--pinkColor) !important;
+  color: white;
+  border-radius: 6px !important;
+}
+
+.btn:focus,
+.btn:hover {
+  border-color: transparent !important;
+  color: white !important;
 }

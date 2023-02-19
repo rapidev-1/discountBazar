@@ -4,7 +4,9 @@ import { HeadingCustom } from '../../../../../../../../../common/Text'
 
 function Card3() {
     return (
-        <Row className='TrendingCard3' gutter={[15, 15]}>
+        <Row
+            className='TrendingCard3'
+            gutter={[20, { xs: 30, sm: 30, md: 40, lg: 20 }]}>
             <Col span={24}>
                 <img src="/assets/images/chair.png" alt="" />
                 <div>

@@ -4,3 +4,6 @@
   padding-block: calc(var(--py) * 5);
   user-select: none;
 }
+.LatestProductContent > .ant-row {
+  margin-inline: 0px !important;
+}

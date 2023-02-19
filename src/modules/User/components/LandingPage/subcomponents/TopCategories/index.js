@@ -24,7 +24,7 @@ function TopCategories() {
                 arrows={false}
             >
                 {watches.map((e, i) => (
-                    <Cards id={i} img={e.img} title={e.title} />
+                    <Cards id={i} key={i} img={e.img} title={e.title} />
                 ))}
             </Carousel>
         </div>

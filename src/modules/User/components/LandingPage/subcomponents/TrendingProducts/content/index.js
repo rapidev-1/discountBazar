@@ -25,7 +25,7 @@ function LatestProductContent({ value }) {
                         })
                     }
                 </Row>
-                <Row justify={"space-between"} gutter={[20, 20]} style={{ marginTop: "30px" }}>
+                <Row justify={"space-between"} gutter={[20, 60]} style={{ marginTop: "30px" }}>
                     <Col lg={8} md={12} sm={24} xs={24}>
                         <Card2 />
                     </Col>
