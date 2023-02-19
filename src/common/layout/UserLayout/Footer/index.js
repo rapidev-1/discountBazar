@@ -30,7 +30,7 @@ const Pages = {
     title: "Pages",
     array: [
         { title: "Home", url: "/" },
-        { title: "Shop", url: "/shop" },
+        { title: "About", url: "/about" },
         { title: "Contact", url: "/contact" },
         { title: "Products", url: "/products" },
         { title: "Login", url: "/login" },

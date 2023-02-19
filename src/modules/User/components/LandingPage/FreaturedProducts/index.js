@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import {
   watches,
   responsiveSliderCards,
-} from "../../../../utility/FeaturedProducts";
+} from "../../../../../utility/FeaturedProducts";
 import Cards from "./Cards";
 import "react-multi-carousel/lib/styles.css";
 function Featureproducts() {
