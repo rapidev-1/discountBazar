@@ -9,7 +9,7 @@ function CenterHeading({ heading, rows, small }) {
             <Typography>
                 <Typography.Title
                     level={2}
-                    ellipsis={{ rows: condition ? rows ? rows : 2 : 1 }}
+                    ellipsis={{ rows: condition ? rows ? rows : 3 : 1 }}
                     className={`HeadingDark ${small && 'small'}`}>
                     {heading}
                 </Typography.Title>

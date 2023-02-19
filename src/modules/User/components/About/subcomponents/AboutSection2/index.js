@@ -11,8 +11,8 @@ function index() {
       </div>
       <div className="about-section2-right">
         <div className="about-section2-right-item">
-          <CenterHeading heading={"Know About Our Ecommerce"} small />
-          <CenterHeading heading={"Business, History"} small />
+          <CenterHeading heading={"Know About Our Ecommerce Business, History"} small />
+          {/* <CenterHeading heading={"Business, History"} small /> */}
           <p className='p'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
