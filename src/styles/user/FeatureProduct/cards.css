@@ -101,6 +101,9 @@
 .card:hover .card-down > strong {
   color: white;
 }
+.card:hover .card-down > p{
+  color: white;
+}
 .card:hover .card-icons {
   transition: ease-in-out 0.3s;
   opacity: 1;

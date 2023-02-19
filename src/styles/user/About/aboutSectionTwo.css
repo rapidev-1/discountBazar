@@ -1,0 +1,36 @@
+.about-section2{
+    display: flex;
+}
+.about-section2-left{
+    border: 1px solid;
+    flex: 1;
+    /* padding:10px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about-section2-left > img{
+    border: 1px solid;
+    width: 570px;
+    height: 409px;
+    object-fit: contain;
+}
+.about-section2-right{
+    border: 1px solid;
+    padding: 20px;
+    flex: 1;
+}
+.about-section2-right-item{
+    border: 1px solid;
+    width: 80%;
+    line-height: 25.6px;
+    font-family: var(--Lato);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start ;
+}
+.about-section2-right-item > p{
+color: #8A8FB9;
+font-size: 16px;
+}

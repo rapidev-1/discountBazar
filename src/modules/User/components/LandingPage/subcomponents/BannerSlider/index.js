@@ -18,7 +18,7 @@ function Slider() {
             </div>
           </div>
           <div className="Banner-right">
-            <div className="banner-gradient-one">
+            <div className="banner-gradient-one"> 
               <div className="banner-gradient-two">
               </div>
               <div className="banner-gradient-three">
