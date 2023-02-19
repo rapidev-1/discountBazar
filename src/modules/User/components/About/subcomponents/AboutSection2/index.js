@@ -9,9 +9,9 @@ function index() {
       <div className="about-section2-left">
         <img src={aboutPic} alt="loading..." />
       </div>
-      <div className="about-section2-right">
+      <div className="about-section2-right"> 
         <div className="about-section2-right-item">
-          <CenterHeading heading={"Know About Our Ecommerce "} />
+          <CenterHeading heading={"Know About Our Ecommerce"} />
           <CenterHeading heading={"Business, History"} />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
