@@ -1,9 +1,12 @@
+.cardFeature {
+  padding: var(--py) !important;
+}
 .card {
-  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%);
-  /* border-radius: 5px; */
+  box-shadow: var(--shadow1);
+  border-radius: 5px;
   display: flex !important;
   flex-direction: column;
-  width: 270px;
+  width: 95%;
   height: 361px;
   /* // border: 1px solid; */
 }
@@ -51,33 +54,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 0 0 5px 5px;
 }
 
 .card-down > strong {
   color: var(--pinkColor);
+  font-family: var(--Lato);
   font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .card-down > p {
-  color: themed("darkHeading");
+  color: var(--headingColor);
+  font-family: var(--Lato);
   font-size: 1rem;
-}
-
-.card-up:hover {
-  /* transition: ease-in-out 0.7s;
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.2); */
-}
-
-.card-icons:hover {
-  /* transition: ease-in-out 0.3s;
-  opacity: 1; */
-}
-
-.card-down:hover {
-  /* background-color: #2f1ac4;
-  transition: ease-in-out 0.3s;
-  color: white; */
 }
 
 .card:hover {
@@ -101,10 +92,16 @@
 .card:hover .card-down > strong {
   color: white;
 }
-.card:hover .card-down > p{
+.card:hover .card-down > p {
   color: white;
 }
 .card:hover .card-icons {
   transition: ease-in-out 0.3s;
   opacity: 1;
+}
+
+@media screen and (max-width: 766px) {
+  .card {
+    width: 100%;
+  }
 }

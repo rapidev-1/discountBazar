@@ -12,7 +12,7 @@ function Loader() {
     if (!loading) return null
     return (
         <Row style={{
-            position: "absolute",
+            position: "fixed",
             display: "grid",
             placeContent: "center",
             background: "white",

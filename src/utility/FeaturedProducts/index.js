@@ -11,17 +11,17 @@ export const responsiveSliderCards = {
     slidesToSlide: 1,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1124 },
-    items: 4,
+    breakpoint: { max: 3000, min: 993 },
+    items: 3,
     slidesToSlide: 1,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
+    breakpoint: { max: 992, min: 797 },
+    items: 2,
     slidesToSlide: 1,
   },
   mobile: {
-    breakpoint: { max: 630, min: 0 },
+    breakpoint: { max: 796, min: 0 },
     items: 1,
     slidesToSlide: 1,
   },
@@ -34,13 +34,13 @@ export const responsiveSliderCards2 = {
     slidesToSlide: 1,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 993 },
     items: 3,
     slidesToSlide: 1,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
+    breakpoint: { max: 992, min: 576 },
+    items: 2,
     slidesToSlide: 1,
   },
   mobile: {

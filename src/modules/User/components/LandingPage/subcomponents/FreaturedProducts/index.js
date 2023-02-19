@@ -5,17 +5,17 @@ import {
   responsiveSliderCards,
 } from "../../../../../../utility/FeaturedProducts";
 import Cards from "./Cards";
-import "react-multi-carousel/lib/styles.css";
 function Featureproducts() {
   return (
     <div className="featuredProducts">
       <h1>Featured Products</h1>
       <Carousel
         className="featured"
+        autoPlay
         responsive={responsiveSliderCards}
         swipeable={true}
-        draggable={true}
         showDots={true}
+        arrows={false}
       >
         {watches.map((e, i) => (
           <Cards id={i} key={i} img={e.img} title={e.title} desc={e.desc} />

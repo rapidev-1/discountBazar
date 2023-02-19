@@ -23,7 +23,7 @@ const item = [
 function Slider() {
   return (
     <div>
-      <Carousel className="Banner" autoplay={false}>
+      <Carousel className="Banner" autoplay={true}>
         {
           item.map((e, i) => {
             return (
