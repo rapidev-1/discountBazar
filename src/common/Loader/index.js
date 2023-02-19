@@ -5,21 +5,15 @@ function Loader() {
     const [loading, setloading] = useState(true)
     useEffect(() => {
         setTimeout(() => {
+            document.body.style.height = "0"
             setloading(false)
-        }, 4000);
+        }, 5000);
     }, [])
 
     if (!loading) return null
+    document.body.style.height = undefined
     return (
-        <Row style={{
-            position: "fixed",
-            display: "grid",
-            placeContent: "center",
-            background: "white",
-            width: "100vw",
-            height: "100vh",
-            zIndex: "10000"
-        }}>
+        <Row className='loader'>
             <Spin size="large" />
         </Row>
     )
