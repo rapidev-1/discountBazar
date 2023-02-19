@@ -10,7 +10,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .about-section2-left > img {
   max-width: 480px;
