@@ -39,3 +39,9 @@
   text-align: center;
   color: var(--textColorLigher);
 }
+
+@media screen and (max-width: 400px) {
+  .about-slider-down {
+    padding-block: 40px 80px;
+  }
+}
