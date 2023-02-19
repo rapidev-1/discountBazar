@@ -4,6 +4,7 @@
 @import "./utility/utlity.css";
 @import "./Logo/logo.css";
 @import "./Text/index.css";
+@import "./Breadcrumbs/index.css";
 
 body {
   font-family: var(--Josefin);

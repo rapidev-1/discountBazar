@@ -1,20 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { CenterHeading } from "../../../../../../common/Text";
-function index() {
+function AboutBanner() {
+  const navigate = useNavigate()
   return (
     <div className="about-banner">
       <div className="about-banner-item">
         <CenterHeading heading={"About Us"} />
         <div className="about-banner-items">
-          <p>Home</p>
-          <span>.</span>
-          <p>Pages.</p>
-          <span>.</span>
-          <p>About Us</p>
+          <p onClick={() => navigate('/')}>Home</p>
+          <span className="dot dotsmaller"></span>
+          <p
+            onClick={() => navigate('/about')}
+            className="colorPink">About Us</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default index;
+export default AboutBanner;

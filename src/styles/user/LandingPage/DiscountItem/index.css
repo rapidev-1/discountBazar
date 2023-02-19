@@ -11,33 +11,3 @@
 .DiscountItem .Banner-right {
   order: unset;
 }
-.DiscountItem .colorPink {
-  color: var(--pinkColor);
-  font-weight: 500;
-  font-family: var(--Josefin);
-  font-size: 0.9rem !important;
-}
-
-.dot {
-  color: var(--pinkColor);
-  margin: 0 20px;
-  position: relative;
-}
-.dot::after {
-  position: absolute;
-  content: "";
-  opacity: 1;
-  background-color: var(--pinkColor);
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.colorHeading {
-  font-weight: 500;
-  font-family: var(--Josefin);
-  font-size: 0.9rem !important;
-  color: var(--headingColor);
-}

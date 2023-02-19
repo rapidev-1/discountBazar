@@ -1,0 +1,17 @@
+.breadcrumbParent {
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  position: absolute;
+  top: 5%;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.ant-breadcrumb-link a:hover {
+  color: var(--pinkColor);
+  background-color: unset;
+}
+
+.ant-breadcrumb li:last-of-type .ant-breadcrumb-link a {
+  color: var(--pinkColor);
+}

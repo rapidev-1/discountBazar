@@ -27,3 +27,43 @@
   font-weight: 400;
   font-size: 1rem;
 }
+
+.colorPink {
+  color: var(--pinkColor);
+  font-weight: 500;
+  font-family: var(--Josefin);
+  font-size: 0.9rem !important;
+}
+
+.dot {
+  color: var(--pinkColor);
+  margin: 0 20px;
+  position: relative;
+}
+.dot::after {
+  position: absolute;
+  content: "";
+  opacity: 1;
+  background-color: var(--pinkColor);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dotsmaller {
+  margin: 0 5px;
+  position: relative;
+}
+.dotsmaller::after {
+  width: 4px !important;
+  height: 4px !important;
+  top: 2px;
+}
+.colorHeading {
+  font-weight: 500;
+  font-family: var(--Josefin);
+  font-size: 0.9rem !important;
+  color: var(--headingColor);
+}
