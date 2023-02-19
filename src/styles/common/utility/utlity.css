@@ -16,7 +16,14 @@
 .flex-start {
   justify-content: flex-start;
 }
-
+.texcenter {
+  text-align: center;
+}
 .SectionPadding {
   padding-block: calc(var(--py) * 6);
+}
+.textLighter {
+  color: var(--textColorLigher);
+  font-weight: 400;
+  font-size: 1rem;
 }

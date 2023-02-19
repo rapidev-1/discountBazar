@@ -1,0 +1,70 @@
+.LoginPage {
+  padding-inline: var(--px);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage > .ant-col {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: column;
+  max-width: 550px;
+  max-height: 500px;
+  box-shadow: var(--shadow1);
+  border-radius: 4px;
+}
+
+.LoginPage .ant-col > .ant-row:first-of-type {
+  width: 100%;
+  padding-top: 2rem;
+}
+.LoginPage .ant-col > .ant-row:first-of-type h1 {
+  font-weight: 700 !important;
+  font-family: var(--Josefin);
+  font-size: 1.9rem;
+}
+.login-form {
+  width: 100%;
+  padding: calc(var(--py) * 15);
+  padding-bottom: 0;
+}
+.login-form-forgot {
+  float: left;
+  color: var(--textColorLigher);
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.ant-form-item-control-input {
+  min-height: unset !important;
+}
+
+.ant-input-affix-wrapper {
+  border: 2px solid var(--pinkColorLighter);
+  border-radius: 0;
+  min-height: 44px;
+}
+
+.ant-form .btn {
+  border-radius: 3px !important;
+  min-height: 40px !important;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .LoginPage > .ant-col {
+    padding: 0rem;
+  }
+}

@@ -1,11 +1,4 @@
 @import "./layout/index.css";
-@import "./Banner/index.css";
+@import "./LandingPage/index.css";
 @import "./About/index.css";
-@import "./FeatureProduct/index.css";
-@import "./LatestProducts/index.css";
-@import "./LandingOffers/index.css";
-@import "./BannerProduct/index.css";
-@import "./TrendingProducts/index.css";
-@import "./TopCategories/index.css";
-@import "./BannerShopNow/index.css";
-@import "./DiscountItem/index.css";
+@import "./Login/index.css";
