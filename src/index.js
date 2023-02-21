@@ -5,8 +5,9 @@ import { store } from "./Store/store"
 import React from 'react';
 import App from './App';
 import 'antd/dist/reset.css';
-// import "./styles/index.scss"
 import "./styles/app.css"
+import "react-multi-carousel/lib/styles.css";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
