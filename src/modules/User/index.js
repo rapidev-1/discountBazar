@@ -4,6 +4,7 @@ import { LandingPage, LoginPage, MultiShop, SignupPage, SingleShop } from './com
 import { AboutPage } from "./components";
 import UserLayout from '../../common/layout/UserLayout'
 import ErrorPage from "../../common/Errors/404"
+import SearchPage from './components/SearchPage';
 function UserRoutes() {
   return (
     <Routes>
@@ -12,6 +13,7 @@ function UserRoutes() {
         <Route path="about" element={<AboutPage />} />
         <Route path="shop" element={<MultiShop />} />
         <Route path="vendorshop/:username" element={<SingleShop />} />
+        <Route path="search" element={<SearchPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
       <Route path='login' element={<LoginPage />} />

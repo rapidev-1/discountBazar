@@ -1,17 +1,19 @@
 import React from "react";
-import Banner from "./subcomponents/BannerSlider";
-import LandingOffers from "./subcomponents/Offers";
-import BannerProduct from "./subcomponents/BannerProduct";
-import TopCategories from "./subcomponents/TopCategories";
-import LatestProducts from "./subcomponents/LatestProducts";
-import TrendingProducts from "./subcomponents/TrendingProducts";
-import Featureproducts from "./subcomponents/FreaturedProducts";
-import BannerShopNow from "./subcomponents/BannerShopNow";
-import DiscountItem from "./subcomponents/DiscountProduct";
+import Loader from "../../../../common/Loader";
+
+const Banner = React.lazy(() => import("./subcomponents/BannerSlider"))
+const LandingOffers = React.lazy(() => import("./subcomponents/Offers"))
+const BannerProduct = React.lazy(() => import("./subcomponents/BannerProduct"))
+const TopCategories = React.lazy(() => import("./subcomponents/TopCategories"))
+const LatestProducts = React.lazy(() => import("./subcomponents/LatestProducts"))
+const TrendingProducts = React.lazy(() => import("./subcomponents/TrendingProducts"))
+const Featureproducts = React.lazy(() => import("./subcomponents/FreaturedProducts"))
+const BannerShopNow = React.lazy(() => import("./subcomponents/BannerShopNow"))
+const DiscountItem = React.lazy(() => import("./subcomponents/DiscountProduct"))
 
 function LandingPage() {
   return (
-    <div>
+    <React.Suspense fallback={<Loader />}>
       <Banner />
       <Featureproducts />
       <LatestProducts />
@@ -21,7 +23,7 @@ function LandingPage() {
       <TopCategories />
       <BannerShopNow />
       <DiscountItem />
-    </div>
+    </React.Suspense>
   );
 }
 
