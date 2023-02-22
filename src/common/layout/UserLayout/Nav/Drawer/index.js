@@ -52,6 +52,7 @@ function UserDrawer({ onClose, open }) {
                             span={24}
                             key={i}>
                             <Link
+                                onClick={onClose}
                                 className='urlLinks'
                                 to={e.url}>
                                 {e.title}
