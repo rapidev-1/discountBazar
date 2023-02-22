@@ -26,7 +26,7 @@ const DiscountItem = () => {
                     <div className="Banner-slider">
                         <div className="Banner-left">
                             <div className="Banner-items">
-                                <h1>
+                                <h1 style={{ fontSize: "1.8rem" }}>
                                     20% Discount Of All Products
                                 </h1>
                                 <p className='colorPink'>

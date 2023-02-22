@@ -3,6 +3,7 @@ import { Input, Row, Col } from 'antd';
 import DiscountBazarIcon from "../../../Icons"
 import Logo from "../../../Logo"
 import { Link } from "react-router-dom"
+import SearchBar from '../../../SearchBar';
 
 const Categories = {
     title: "Categories",
@@ -43,16 +44,11 @@ const UserFooter = () => (
             <Row gutter={[20, 20]}>
                 <Col lg={7} md={24} sm={24} xs={24}>
                     <Logo />
-                    <Input.Search
+                    <SearchBar
                         style={{ marginTop: "40px" }}
                         placeholder="Enter Your Email"
-                        enterButton={
-                            <DiscountBazarIcon
-                                icon={"send"}
-                            />
-                        }
-                        size="middle"
                         onSearch={onSearch}
+                        icon={'send'}
                     />
                 </Col>
                 <Col md={0} lg={3} />

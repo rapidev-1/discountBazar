@@ -7,7 +7,7 @@ function Cards({ img, title, }) {
         <img src={img} alt="loading...." className="card-image" />
         <Button className='shopbutton'>
           View Shop
-        </Button> 
+        </Button>
       </div>
 
       <div className="card-down">

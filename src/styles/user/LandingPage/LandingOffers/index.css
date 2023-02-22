@@ -48,3 +48,14 @@
   -webkit-line-clamp: 2; /* for webkit */
   -moz-box-lines: 2; /* for firefox */
 }
+@media screen and (max-width: 992px) {
+  .offerCard {
+    padding: calc(var(--py) * 1) calc(var(--py) * 3);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .offerCard {
+    padding: calc(var(--py) * 2) calc(var(--py) * 3);
+  }
+}

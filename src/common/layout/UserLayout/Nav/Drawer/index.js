@@ -2,9 +2,11 @@ import { Avatar, Col, Drawer, Row, Typography } from 'antd'
 import { Link } from "react-router-dom"
 import React from 'react'
 import Logo from '../../../../Logo'
+import SearchBar from '../../../../SearchBar'
 
 const Links = [
     { title: "Home", url: "/" },
+    { title: "About", url: "/about" },
     { title: "Shop", url: "/Shop" },
     { title: "Contact", url: "/contact" },
     { title: "Products", url: "/product" },
@@ -37,6 +39,7 @@ function UserDrawer({ onClose, open }) {
             </Row>
         )
     }
+    const onSearch = (e) => { console.log(e); onClose() }
     return (
         <Drawer
             title={<DrawerHeader />}
@@ -46,6 +49,10 @@ function UserDrawer({ onClose, open }) {
             className="userDrawer"
             open={open}>
             <Row className='drawerNav'>
+                <SearchBar
+                    onSearch={onSearch}
+                    icon={'search'}
+                />
                 {
                     Links.map((e, i) =>
                         <Col

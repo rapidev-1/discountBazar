@@ -2,6 +2,7 @@ import Logo from '../../../Logo'
 import { Row, Col, Input } from "antd"
 import DiscountBazarIcon from '../../../Icons';
 import { Link } from "react-router-dom"
+import SearchBar from '../../../SearchBar';
 const { Search } = Input
 
 function Lowernavbar() {
@@ -38,15 +39,9 @@ function Lowernavbar() {
       </Col>
       <Col md={12} sm={24} xs={24} className="flex flex-end">
         <Col xl={14} lg={14}>
-          <Search
-            placeholder="input search text"
-            enterButton={
-              <DiscountBazarIcon
-                icon={"search"}
-              />
-            }
-            size="middle"
+          <SearchBar
             onSearch={onSearch}
+            icon={'search'}
           />
         </Col>
       </Col>

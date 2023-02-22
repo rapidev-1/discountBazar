@@ -12,6 +12,7 @@
   right: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: var(--shadow1);
 }
 
 .hamburger svg {

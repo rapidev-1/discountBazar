@@ -5,11 +5,11 @@ html {
   --purpleColor: #7e33e0;
   --linkColor: #0d0e43;
   --headingColor: #151875;
-  --singleshopBg: #0D0E43;
+  --singleshopBg: #0d0e43;
   --textColorLigher: #8a8fb9;
   --bgSoft: rgb(254, 254, 254);
   --bgColor2: #eeeffb;
-  --bgCards: #EBF4F3;
+  --bgCards: #ebf4f3;
   --headingPurpleColor2: #1a0b5b;
   --pinkColorLighter: #e7e4f8;
   --grayBlueBg: #f2f0ff;
@@ -20,4 +20,18 @@ html {
   --shadow1: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%);
   --Lato: "Lato";
   --Josefin: "Josefin Sans";
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    --py: 1%;
+    --px: 6%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    --py: 1.1%;
+    --px: 5%;
+  }
 }
