@@ -103,6 +103,7 @@
   }
   .BannerProduct ul {
     font-size: 0.9rem;
+    padding: calc(var(--py) * 4) calc(var(--py) * 6.4);
   }
 }
 @media screen and (max-width: 400px) {

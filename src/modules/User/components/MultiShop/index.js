@@ -1,12 +1,12 @@
-import React from 'react'
-import Banner from "./subComponents/Banner"
+import React, { Fragment } from 'react'
+import Banner from '../../../../common/Banner';
 import ProductGallery from "../../../../common/ProductGallery";
 function index() {
   return (
-    <div>
-      <Banner />
+    <Fragment>
+      <Banner title={"shop"} />
       <ProductGallery vendorValue={true} />
-    </div>
+    </Fragment>
   );
 }
 
