@@ -1,11 +1,13 @@
-import React from 'react'
-import Card from "./Cards"
-import { cardsData } from '../../utility/galleryProduct/index';
-import { Select, Space, Input, Col, Row } from "antd";
+import React from "react";
+import Card from "./Cards";
+import { cardsData } from "../../utility/galleryProduct/index";
+import { Select, Grid, Space, Input, Col, Row } from "antd";
 const handleChange = (value) => {
   console.log(`selected ${value}`);
 };
-function index({ vendorValue }) {
+function Index({ vendorValue }) {
+  const breakpoints = Grid.useBreakpoint();
+  const condition = breakpoints["xs"];
   return (
     <div className="gallery-container">
       <div className="gallery-container-up SectionPadding">
@@ -15,38 +17,36 @@ function index({ vendorValue }) {
         <div className="gallery-container-up-right">
           <div className="gallery-container-up-right-items">
             <p>Sort By:</p>
-            <Space wrap>
-              <Select
-                defaultValue="lucy"
-                style={{
-                  width: 120,
-                }}
-                onChange={handleChange}
-                options={[
-                  {
-                    value: "jack",
-                    label: "Jack",
-                  },
-                  {
-                    value: "lucy",
-                    label: "Lucy",
-                  },
-                  {
-                    value: "Yiminghe",
-                    label: "yiminghe",
-                  },
-                  {
-                    value: "disabled",
-                    label: "Disabled",
-                    disabled: true,
-                  },
-                ]}
-              />
-            </Space>
+            {/* <Space wrap> */}
+            <Select
+              className="gallery-container-up-right-items-select"
+              defaultValue={condition ? " " : "Sort By"}
+              onChange={handleChange}
+              options={[
+                {
+                  value: "jack",
+                  label: "Jack",
+                },
+                {
+                  value: "lucy",
+                  label: "Lucy",
+                },
+                {
+                  value: "Yiminghe",
+                  label: "yiminghe",
+                },
+                {
+                  value: "disabled",
+                  label: "Disabled",
+                  disabled: true,
+                },
+              ]}
+            />
+            {/* </Space> */}
           </div>
           <div className="gallery-container-up-right-items">
             <p>View:</p>
-            <Input />
+            <Input placeholder={condition ? "View" : ""} />
           </div>
         </div>
       </div>
@@ -72,4 +72,4 @@ function index({ vendorValue }) {
   );
 }
 
-export default index
+export default Index;
