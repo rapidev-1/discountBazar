@@ -1,66 +1,67 @@
 @import "./Cards/index.css";
 
-.gallery-container{
-display: flex;
-flex-direction: column;
+.gallery-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.gallery-container-up{
-    display: flex;
-    flex: 1;
-    width: 84%;
-    /* border: 1px solid; */
-    margin: auto;
+.gallery-container-up {
+  display: flex;
+  flex: 1;
+  width: 84%;
+  /* border: 1px solid; */
+  margin: auto;
 }
-.gallery-container-up-left{
-    display: flex;
-    flex: 1;
+.gallery-container-up-left {
+  display: flex;
+  flex: 1;
 }
-.gallery-container-up-left > h1{
-    font-size: 20px;
-    color: var(--headingColor);
-    font-weight: 600;
+.gallery-container-up-left > h1 {
+  font-size: 20px;
+  color: var(--headingColor);
+  font-weight: 600;
 }
-.gallery-container-up-right{
-    display: flex;
-    align-items: center;
-    /* padding-left: 3%; */
-    justify-content: flex-end;
-    flex: 1;
-    gap: 1rem;
-    /* border: 1px solid; */
+.gallery-container-up-right {
+  display: flex;
+  align-items: center;
+  /* padding-left: 3%; */
+  justify-content: flex-end;
+  flex: 1;
+  gap: 1rem;
+  /* border: 1px solid; */
 }
-.gallery-container-up-right-items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    /* border: 1px solid; */
+.gallery-container-up-right-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  /* border: 1px solid; */
 }
-.gallery-container-up-right-items > p{
-    margin: 0px;
-    padding:3px;
-    color: var(--headingColor);
-    font-weight: 400;
-    size: 16px;
+.gallery-container-up-right-items > p {
+  margin: 0px;
+  padding: 3px;
+  color: var(--headingColor);
+  font-weight: 400;
+  size: 16px;
 }
-.gallery-container-down{
-    flex: 2;
-    /* border: 1px solid; */
-    width: 87%;
-    margin: auto;
+.gallery-container-down {
+  flex: 2;
+  /* border: 1px solid; */
+  width: 100%;
+  margin: auto;
+  padding-inline: var(--px);
 }
 @media screen and (max-width: 1000px) {
-    .gallery-container-up-right {
-flex-direction: column-reverse;
-        }
-    .gallery-container-up {
-flex-direction: column;
-        }
-    .gallery-container-up-left{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        }
+  .gallery-container-up-right {
+    flex-direction: column-reverse;
+  }
+  .gallery-container-up {
+    flex-direction: column;
+  }
+  .gallery-container-up-left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
 }
