@@ -11,7 +11,7 @@ function UserRoutes() {
         <Route index element={<LandingPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="shop" element={<MultiShop />} />
-        <Route path="venodr/:username" element={<SingleShop />} />
+        <Route path="vendorshop/:username" element={<SingleShop />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
       <Route path='login' element={<LoginPage />} />

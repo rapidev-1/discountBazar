@@ -6,7 +6,7 @@ function Banner() {
     <div className="single-shop-banner">
       <div className="single-shop-banner-container">
         <div className="single-shop-banner-left">
-          <img src={noAvatar} alt="loading......" />
+          <img src={noAvatar} className="img" alt="loading......" />
         </div>
         <div className="single-shop-banner-right">
           <h1>Shop Name</h1>
@@ -14,7 +14,7 @@ function Banner() {
           <div className="single-shop-banner-right-item">
             <div className="single-shop-banner-right-item-left">
               <div className="single-shop-banner-right-item-left-item">
-                <img src={star} alt='loading...'/>
+                <img src={star} alt='loading...' />
                 <strong>4.0</strong>
               </div>
               <strong>100+ ratings</strong>
