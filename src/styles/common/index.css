@@ -6,6 +6,7 @@
 @import "./Text/index.css";
 @import "./Breadcrumbs/index.css";
 @import "./Loader/index.css";
+@import "./ProductGallery/index.css";
 body {
   font-family: var(--Josefin);
 }
