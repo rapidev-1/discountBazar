@@ -67,3 +67,8 @@
   font-size: 0.9rem !important;
   color: var(--headingColor);
 }
+
+/* img */
+.img {
+  max-width: 100%;
+}

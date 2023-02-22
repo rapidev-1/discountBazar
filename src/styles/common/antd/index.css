@@ -19,3 +19,17 @@
 .ant-row {
   max-width: 100%;
 }
+
+@media screen and (max-width: 400px) {
+  .ant-col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .ant-row {
+    margin: unset !important;
+  }
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}

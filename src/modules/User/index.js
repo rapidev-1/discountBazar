@@ -10,8 +10,8 @@ function UserRoutes() {
       <Route path="/*" element={<UserLayout />}>
         <Route index element={<LandingPage />} />
         <Route path="about" element={<AboutPage />} />
-        <Route path="multishop" element={<MultiShop />} />
-        <Route path="singleshop/:username" element={<SingleShop />} />
+        <Route path="shop" element={<MultiShop />} />
+        <Route path="vendorshop/:username" element={<SingleShop />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
       <Route path='login' element={<LoginPage />} />

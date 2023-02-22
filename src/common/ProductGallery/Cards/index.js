@@ -1,9 +1,9 @@
 import React from 'react'
 import DiscountBazarIcon from "../../../common/Icons/index";
 import { UserOutlined } from "@ant-design/icons";
-import { Avatar} from "antd";
+import { Avatar } from "antd";
 import { useNavigate } from 'react-router-dom';
-function Index({ img, title, vendor, price, vendorValue}) {
+function Index({ img, title, vendor, price, vendorValue }) {
   let navigate = useNavigate();
   return (
     <div className="cardGallery">
@@ -18,7 +18,7 @@ function Index({ img, title, vendor, price, vendorValue}) {
             {vendorValue && (
               <div
                 className="cardGallery-card-vendor"
-                onClick={() => navigate(`/singleshop/${vendor}`)}
+                onClick={() => navigate(`/vendorshop/${vendor}`)}
               >
                 <Avatar shape="square" icon={<UserOutlined />} />
                 <strong>{vendor}</strong>
