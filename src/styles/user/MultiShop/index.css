@@ -1,0 +1,37 @@
+.multi-shop-banner {
+    width: 100%;
+    background-color: var(--bgColor2);
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: var(--px);
+}
+
+.multi-shop-banner-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.multi-shop-banner-items {
+    width: 80%;
+    gap: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.multi-shop-banner-items>p {
+    font-family: var(--Josefin);
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+.multi-shop-banner-items>span {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
