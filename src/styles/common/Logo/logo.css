@@ -3,6 +3,7 @@
   font-size: 30px;
   margin-top: -8px;
   cursor: pointer;
+  user-select: none;
 }
 @media screen and (max-width: 992px) {
   .Logo {

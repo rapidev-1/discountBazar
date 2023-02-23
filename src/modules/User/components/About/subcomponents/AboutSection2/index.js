@@ -7,7 +7,7 @@ function index() {
   return (
     <div className="about-section2 SectionPadding">
       <div className="about-section2-left">
-        <img src={aboutPic} alt="loading..." />
+        <img src={aboutPic} alt="loading..." loading="lazy" />
       </div>
       <div className="about-section2-right">
         <div className="about-section2-right-item">

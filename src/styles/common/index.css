@@ -11,3 +11,8 @@
 body {
   font-family: var(--Josefin);
 }
+
+img,
+a {
+  user-select: none;
+}
