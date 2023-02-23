@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
+import { CenterHeading } from "../../../../../../common/Text";
 import {
   watches,
   responsiveSliderCards,
@@ -8,7 +9,7 @@ import Cards from "./Cards";
 function Featureproducts() {
   return (
     <div className="featuredProducts">
-      <h1>Featured Products</h1>
+      <CenterHeading heading={"Featured Products"} />
       <Carousel
         className="featured"
         autoPlay
