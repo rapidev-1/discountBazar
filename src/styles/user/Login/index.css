@@ -64,8 +64,22 @@
   font-size: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+  .LoginPage > .ant-col {
+    /* padding: 0rem;
+    box-shadow: none; */
+  }
+  .login-form {
+    padding: calc(var(--py) * 8);
+  }
+}
+
 @media screen and (max-width: 400px) {
   .LoginPage > .ant-col {
     padding: 0rem;
+    box-shadow: none;
+  }
+  .login-form {
+    padding: 0;
   }
 }
