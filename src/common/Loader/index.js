@@ -8,16 +8,17 @@ function Loader() {
 
     useEffect(() => {
         var timeout;
+        var func = () => setloading(false)
         if (breakpoints['xs'])
             timeout = setTimeout(() => {
                 setloading(false)
-                window.removeEventListener("load")
+                window.removeEventListener("load", func)
             }, 3000);
         else {
-            window.addEventListener("load", () => setloading(false))
+            window.addEventListener("load", () => func)
         }
         return () => {
-            window.removeEventListener("load")
+            window.removeEventListener("load", func)
             clearTimeout(timeout)
         }
     }, [breakpoints])
