@@ -20,7 +20,7 @@ function Index({ vendorValue }) {
             {/* <Space wrap> */}
             <Select
               className="gallery-container-up-right-items-select"
-              defaultValue={condition ? " " : "Sort By"}
+              defaultValue={condition ? "Sort By " : " "}
               onChange={handleChange}
               options={[
                 {
