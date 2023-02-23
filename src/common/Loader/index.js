@@ -1,19 +1,23 @@
 import { Grid, Row, Spin } from 'antd'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { hideLoader } from '../../Store/Features/LoaderSlice'
 
 function Loader() {
-    const [loading, setloading] = useState(true)
     const breakpoints = Grid.useBreakpoint()
+    const dispatch = useDispatch()
+    const state = useSelector(state => state.loader.isLoading)
 
 
     useEffect(() => {
         var timeout;
-        var func = () => setloading(false)
-        if (breakpoints['xs'] || breakpoints['sm'])
+        var func = () => dispatch(hideLoader())
+        if (breakpoints['xs'] === true) {
             timeout = setTimeout(() => {
-                setloading(false)
+                dispatch(hideLoader())
                 window.removeEventListener("load", func)
             }, 3000);
+        }
         else {
             window.addEventListener("load", () => func)
         }
@@ -21,8 +25,8 @@ function Loader() {
             window.removeEventListener("load", func)
             clearTimeout(timeout)
         }
-    }, [breakpoints])
-    if (!loading) return null
+    }, [breakpoints, dispatch])
+    if (!state) return null
     document.body.style.height = undefined
     return (
         <Row className='loader'>

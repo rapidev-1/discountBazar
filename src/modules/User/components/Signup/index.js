@@ -64,7 +64,7 @@ const App = () => {
 
                             <Form.Item>
                                 <Button type="primary" htmlType="submit" className="login-form-button btn">
-                                    Signup in
+                                    Signup
                                 </Button>
 
                             </Form.Item>

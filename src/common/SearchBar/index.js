@@ -9,7 +9,10 @@ function SearchBar({ onSearch, icon, placeholder, style }) {
         return () => { settext(null) }
     }, [])
     const navigate = useNavigate()
-    const gotoSearch = () => navigate('/search')
+    const gotoSearch = () => {
+        navigate('/search')
+        onSearch()
+    }
     return (
         <Input.Search
             style={style}

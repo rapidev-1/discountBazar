@@ -3,13 +3,13 @@ import { Route, Routes } from "react-router-dom"
 import { LandingPage, LoginPage, MultiShop, SignupPage, SingleShop } from './components'
 import { AboutPage } from "./components";
 import UserLayout from '../../common/layout/UserLayout'
-import Loader from '../../common/Loader';
+import GetLoader from '../../common/GetLoader';
 const ErrorPage = React.lazy(() => import("../../common/Errors/404"))
 const SearchPage = React.lazy(() => import('./components/SearchPage'));
 
 function UserRoutes() {
   return (
-    <React.Suspense fallback={<Loader />}>
+    <React.Suspense fallback={<GetLoader />}>
       <Routes>
         <Route path="/*" element={<UserLayout />}>
           <Route index element={<LandingPage />} />
