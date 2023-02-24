@@ -125,16 +125,20 @@
 }
 @media screen and (max-width: 400px) {
   .banner-gradient-one {
-    max-width: 250px;
-    max-height: 250px;
+    width: 250px !important;
+    height: 250px !important;
+    min-height: unset !important;
+    min-width: unset !important;
   }
   .Banner-right img {
     max-width: 80%;
   }
-  .banner-gradient-three {
-    right: 0;
-  }
+  .banner-gradient-three,
   .banner-gradient-two {
     right: 0;
+    width: 250px !important;
+    height: 250px !important;
+    min-height: unset !important;
+    min-width: unset !important;
   }
 }

@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Cards";
 import { cardsData } from "../../utility/galleryProduct/index";
-import { Select, Grid, Space, Input, Col, Row } from "antd";
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
+import { Select, Grid, Input, Col, Row } from "antd";
+
 function Index({ vendorValue }) {
   const breakpoints = Grid.useBreakpoint();
-  const condition = breakpoints["xs"];
+  const [value, setvalue] = useState()
+  useEffect(() => {
+    if (breakpoints['xs'])
+      setvalue("Sort By")
+    else setvalue("") 
+  }, [breakpoints])
+  const handleChange = (value) => {
+    setvalue(value)
+  };
   return (
     <div className="gallery-container">
       <div className="gallery-container-up SectionPadding">
@@ -20,7 +26,8 @@ function Index({ vendorValue }) {
             {/* <Space wrap> */}
             <Select
               className="gallery-container-up-right-items-select"
-              defaultValue={condition ? "Sort By " : " "}
+              // defaultValue={condition ? "Sort By" : undefined}
+              value={value}
               onChange={handleChange}
               options={[
                 {
@@ -46,7 +53,7 @@ function Index({ vendorValue }) {
           </div>
           <div className="gallery-container-up-right-items">
             <p>View:</p>
-            <Input placeholder={condition ? "View" : ""} />
+            <Input placeholder={value ? "View" : ""} />
           </div>
         </div>
       </div>
@@ -70,6 +77,6 @@ function Index({ vendorValue }) {
       </div>
     </div>
   );
-}
+} 
 
 export default Index;

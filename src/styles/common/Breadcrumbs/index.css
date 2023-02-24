@@ -15,3 +15,7 @@
 .ant-breadcrumb li:last-of-type .ant-breadcrumb-link a {
   color: var(--pinkColor);
 }
+.ant-breadcrumb li a {
+  font-weight: 500;
+  font-size: 0.92rem;
+}

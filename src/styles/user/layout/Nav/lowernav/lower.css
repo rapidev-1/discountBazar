@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--bgSoft);
+  box-shadow: var(--shadow1);
 }
 .urlLinks {
   color: var(--linkColor);
@@ -23,11 +24,11 @@
   max-height: 33px !important;
 }
 .ant-input-search-button {
-  margin-top: -1px !important;
   background-color: var(--pinkColor);
+  box-shadow: unset;
 }
 .ant-input-search input {
-  min-height: 33px !important;
+  min-height: 32px !important;
 }
 .ant-input-search-button:active,
 .ant-input-search-button:hover,

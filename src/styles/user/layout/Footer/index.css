@@ -35,6 +35,8 @@
 @media screen and (max-width: 767px) {
   .footerLower:nth-of-type(2) .ant-row .ant-row {
     justify-content: flex-start;
-    padding-block: 0.5rem;
+    padding-top: 0.35rem;
+  }
+  .footerLower:nth-child(2) {
   }
 }

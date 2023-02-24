@@ -17,6 +17,7 @@
   border: unset;
   order: -1;
   align-items: center;
+  padding-right: 2.5rem;
 }
 .BannerProduct img {
   left: 0;
@@ -82,12 +83,13 @@
   }
   .BannerProduct .Banner-right {
     min-height: 400px;
+    padding-right: 0;
   }
   .BannerProduct img {
-    /* height: 330px; */
-    /* width: 430px; */
-    max-width: 95%;
+    max-width: 100%;
     object-fit: contain;
+    position: unset;
+    transform: unset;
   }
   .BannerProduct .banner-gradient-one,
   .BannerProduct .banner-gradient-two,
@@ -101,6 +103,7 @@
   }
   .BannerProduct ul {
     font-size: 0.9rem;
+    padding: calc(var(--py) * 4) calc(var(--py) * 6.4);
   }
 }
 @media screen and (max-width: 400px) {

@@ -7,7 +7,7 @@ function Index({ img, title, vendor, price, vendorValue }) {
   let navigate = useNavigate();
   return (
     <div className="cardGallery">
-      <div className="cardGallery-card">
+      <div className="cardGallery-card" >
         <div className="cardGallery-card-up">
           <div className="cardGallery-card-icons">
             <DiscountBazarIcon text={""} icon={"cart"} />
@@ -29,7 +29,7 @@ function Index({ img, title, vendor, price, vendorValue }) {
         </div>
         <div className="cardGallery-card-down">
           <strong>{title}</strong>
-          <p>{price}</p>
+          <p>Rs {price}</p>
         </div>
       </div>
     </div>

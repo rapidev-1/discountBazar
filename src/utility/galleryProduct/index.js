@@ -53,3 +53,29 @@ export const cardsData = [
     desc: "4300000 ",
   },
 ];
+export const cards = [
+  {
+    img: Watch,
+    title: "Lorem Ipsum",
+    vender: "Abdullah Asif",
+    desc: "4300000 ",
+  },
+  {
+    img: Football,
+    title: "Lorem Ipsum",
+    vender: "Abdullah Asif",
+    desc: "4300000 ",
+  },
+  {
+    img: PC,
+    title: "Lorem Ipsum",
+    vender: "Abdullah Asif",
+    desc: "4300000 ",
+  },
+  {
+    img: Watch,
+    title: "Lorem Ipsum",
+    vender: "Abdullah Asif",
+    desc: "4300000 ",
+  }
+];

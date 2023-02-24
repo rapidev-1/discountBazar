@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .ant-col {
+  .ant-col:not(.footerUpper, .footerLower, .ant-drawer-title .ant-col) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }

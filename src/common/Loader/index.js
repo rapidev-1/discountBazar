@@ -1,15 +1,27 @@
-import { Row, Spin } from 'antd'
+import { Grid, Row, Spin } from 'antd'
 import React, { useEffect, useState } from 'react'
 
 function Loader() {
     const [loading, setloading] = useState(true)
-    useEffect(() => {
-        setTimeout(() => {
-            document.body.style.height = "0"
-            setloading(false)
-        }, 5000);
-    }, [])
+    const breakpoints = Grid.useBreakpoint()
 
+
+    useEffect(() => {
+        var timeout;
+        var func = () => setloading(false)
+        if (breakpoints['xs'] || breakpoints['sm'])
+            timeout = setTimeout(() => {
+                setloading(false)
+                window.removeEventListener("load", func)
+            }, 3000);
+        else {
+            window.addEventListener("load", () => func)
+        }
+        return () => {
+            window.removeEventListener("load", func)
+            clearTimeout(timeout)
+        }
+    }, [breakpoints])
     if (!loading) return null
     document.body.style.height = undefined
     return (

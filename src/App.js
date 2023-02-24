@@ -1,24 +1,24 @@
 import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Loader from './common/Loader';
-import { Vendor, User, Admin } from './modules'
 import { useThemetoggler } from './utility/themetoggler';
-
+const Vendor = React.lazy(() => import('./modules/Vendor'))
+const User = React.lazy(() => import('./modules/User'))
+const Admin = React.lazy(() => import('./modules/Admin'))
 
 function App() {
   const [theme, settheme] = useState();
   useThemetoggler(theme ? theme : null, settheme)
   return (
     <div className={`theme-${theme === "dark" ? "dark" : "light"}`}>
-      {/* <button onClick={() => settheme(e => e === "dark" ? "light" : "dark")} >
-        toggle
-      </button> */}
       <Loader />
-      <Routes>
-        <Route path='/vendor/*' element={<Vendor />} />
-        <Route path='/admin/*' element={<Admin />} />
-        <Route path='/*' element={<User />} />
-      </Routes>
+      <React.Suspense fallback={<Loader />}>
+        <Routes>
+          <Route index path='/*' element={<User />} />
+          <Route path='/vendor/*' element={<Vendor />} />
+          <Route path='/admin/*' element={<Admin />} />
+        </Routes>
+      </React.Suspense>
     </div>
   )
 }

@@ -1,0 +1,9 @@
+.related-container{
+    /* border: 1px solid; */
+    width: 87%;
+    margin: auto;
+}
+.related-container > h1 {
+font-size: 32px;
+color: var(--headingColor);
+}

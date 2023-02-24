@@ -72,3 +72,14 @@
 .img {
   max-width: 100%;
 }
+
+@media screen and (max-width: 400px) {
+  .dot {
+    margin: 0 10px;
+  }
+  .dot,
+  .colorPink,
+  .colorHeading {
+    font-size: 11.5px !important;
+  }
+}
