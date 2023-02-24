@@ -73,6 +73,12 @@
   max-width: 100%;
 }
 
+.section {
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-block: 50px;
+}
+
 @media screen and (max-width: 400px) {
   .dot {
     margin: 0 10px;

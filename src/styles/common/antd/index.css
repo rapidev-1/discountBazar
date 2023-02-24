@@ -25,14 +25,15 @@
       .footerUpper,
       .footerLower,
       .ant-drawer-title .ant-col,
-      .breadcrumbParent
+      .breadcrumbParent,
+
     ) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
   .ant-row {
-    margin: unset !important;
+    margin-inline: unset !important;
   }
   .ant-drawer-content-wrapper {
     width: 100% !important;
