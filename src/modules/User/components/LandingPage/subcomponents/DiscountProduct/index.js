@@ -19,7 +19,6 @@ const DiscountItem = () => {
                 <small className='colorHeading'>
                     Best Stick
                 </small>
-                <span className='dot'></span>
             </Col>
             <Col span={24} className="flex hfcenter">
                 <div className="Banner BannerProduct ">

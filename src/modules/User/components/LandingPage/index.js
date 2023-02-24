@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "../../../../common/Loader";
+import GetLoader from "../../../../common/GetLoader";
 
 const Banner = React.lazy(() => import("./subcomponents/BannerSlider"))
 const LandingOffers = React.lazy(() => import("./subcomponents/Offers"))
@@ -13,7 +13,7 @@ const DiscountItem = React.lazy(() => import("./subcomponents/DiscountProduct"))
 
 function LandingPage() {
   return (
-    <React.Suspense fallback={<Loader />}>
+    <React.Suspense fallback={<GetLoader />}>
       <Banner />
       <Featureproducts />
       <LatestProducts />

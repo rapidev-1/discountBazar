@@ -8,6 +8,15 @@
 @import "./Loader/index.css";
 @import "./ProductGallery/index.css";
 @import "./Errors/index.css";
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--Josefin);
+}
+
+img,
+a {
+  user-select: none;
 }

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Banner from './SubComponents/Banner'
 import ProductGallery from "../../../../common/ProductGallery";
-function index() {
+function VendorShopPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Banner />
@@ -10,4 +13,4 @@ function index() {
   );
 }
 
-export default index
+export default VendorShopPage

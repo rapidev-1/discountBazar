@@ -21,13 +21,19 @@
 }
 
 @media screen and (max-width: 400px) {
-  .ant-col:not(.footerUpper, .footerLower, .ant-drawer-title .ant-col) {
+  .ant-col:not(
+      .footerUpper,
+      .footerLower,
+      .ant-drawer-title .ant-col,
+      .breadcrumbParent,
+
+    ) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
   .ant-row {
-    margin: unset !important;
+    margin-inline: unset !important;
   }
   .ant-drawer-content-wrapper {
     width: 100% !important;
