@@ -29,7 +29,7 @@ function Index({ img, title, vendor, price, vendorValue }) {
         </div>
         <div className="cardGallery-card-down">
           <strong>{title}</strong>
-          <p>{price}</p>
+          <p>Rs {price}</p>
         </div>
       </div>
     </div>

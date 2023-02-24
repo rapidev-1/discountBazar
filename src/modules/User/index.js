@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom"
-import { LandingPage, LoginPage, MultiShop, SignupPage, SingleShop } from './components'
+import { LandingPage, LoginPage, MultiShop, ProductPage, SignupPage, SingleShop } from './components'
 import { AboutPage } from "./components";
 import UserLayout from '../../common/layout/UserLayout'
 import GetLoader from '../../common/GetLoader';
@@ -16,11 +16,12 @@ function UserRoutes() {
           <Route path="about" element={<AboutPage />} />
           <Route path="shop" element={<MultiShop />} />
           <Route path="vendorshop/:username" element={<SingleShop />} />
+          <Route path="product/:id" element={<ProductPage />} />
           <Route path="search" element={<SearchPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
-        <Route path='login' element={<LoginPage />} />
-        <Route path='signup' element={<SignupPage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="signup" element={<SignupPage />} />
       </Routes>
     </React.Suspense>
   );

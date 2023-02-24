@@ -13,6 +13,10 @@ export const map = {
         title: "404 Not Found",
         url: <BreadCrumbs value={"404 Not Found"} />
     },
+    Product: {
+        title: "Product Detail",
+        url: <BreadCrumbs value={"Product"} />
+    },
     search: {
         title: "Search and Shop with Ease",
         url: <BreadCrumbs value={"Search"} />

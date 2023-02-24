@@ -12,7 +12,7 @@ const items = [
     },
     {
         key: 'Best Seller',
-        label: `Best Seller`,
+        label: `Best Seller`, 
         children: <LatestProductContent value={"bestseller"} />,
     },
     {

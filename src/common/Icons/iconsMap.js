@@ -6,6 +6,7 @@ import { FiMenu } from "react-icons/fi"
 import { BsTwitter } from "react-icons/bs"
 import { AiFillInstagram } from "react-icons/ai"
 import { RiSendPlane2Fill } from "react-icons/ri"
+import {BsFacebook} from "react-icons"
 
 const cn = 'DiscountBazarIcon'
 export const iconmap = {

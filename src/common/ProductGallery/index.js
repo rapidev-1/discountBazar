@@ -9,7 +9,7 @@ function Index({ vendorValue }) {
   useEffect(() => {
     if (breakpoints['xs'])
       setvalue("Sort By")
-    else setvalue("")
+    else setvalue("") 
   }, [breakpoints])
   const handleChange = (value) => {
     setvalue(value)
@@ -77,6 +77,6 @@ function Index({ vendorValue }) {
       </div>
     </div>
   );
-}
+} 
 
 export default Index;
