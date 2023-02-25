@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Cards";
+import Card from "../Cards";
 import { cardsData } from "../../utility/galleryProduct/index";
 import { Select, Grid, Input, Col, Row } from "antd";
 
