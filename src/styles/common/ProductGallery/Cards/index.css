@@ -5,7 +5,7 @@
 .cardGallery-card {
     box-shadow: var(--shadow1);
     border-radius: 5px;
-    display: flex !important;
+    display: flex !important; 
     flex-direction: column;
     width: 95%;
     height: 365px;

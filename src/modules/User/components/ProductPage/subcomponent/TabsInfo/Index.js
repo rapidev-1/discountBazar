@@ -6,7 +6,7 @@ import TabThree from "./tab3/Index"
 import TabFour from "./tab4/map";
 function Index() {
   return (
-    <div className='SectionPadding tabs-product'>
+    <div className='section tabs-product'>
     <Tabs
       defaultActiveKey="1"
       items={[

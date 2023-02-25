@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "antd";
+import { Rate,Image } from "antd";
 import img1 from "../../../../../../common/Images/bag1.png";
 import img2 from "../../../../../../common/Images/bag2.png";
 import img3 from "../../../../../../common/Images/bag3.png";
@@ -10,22 +10,21 @@ function index() {
     <div className="product-container">
       <div className="product-left">
         <div className="product-left-up">
-          <img src={img1} alt="Slow Internet :( " />
+          <Image src={img1} className="imageBig" alt="Slow Internet :( " />
         </div>
         <div className="product-left-down">
-          <img src={img2} alt="Slow Internet :( " />
-          <img src={img3} alt="Slow Internet :( " />
-          <img src={img4} alt="Slow Internet :( " />
+          <Image src={img2} className="imageSmall" alt="Slow Internet :( " />
+          <Image src={img3} className="imageSmall" alt="Slow Internet :( " />
+          <Image src={img4} className="imageSmall" alt="Slow Internet :( " />
         </div>
       </div>
       <div className="product-right">
-        <h1>
-          <i>Playwood arm chair</i>
-        </h1>
+        <h1>Playwood arm chair</h1>
         <strong>Pkr 45000</strong>
         <div className="product-right-item">
           <strong>Color</strong>
         </div>
+        <Rate />
         <p>
           <i>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
