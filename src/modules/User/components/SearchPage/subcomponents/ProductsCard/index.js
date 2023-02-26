@@ -38,7 +38,7 @@ function SearchPageProductsCard() {
             hoverable
             onClick={() => navigate(`/product/123`)}
             className='serachpageProductCard'
-            cover={<img className='productcardimg' alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            cover={<img loading="lazy" className='productcardimg' alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
         >
             <Meta
                 title={<TitltComponent />}
