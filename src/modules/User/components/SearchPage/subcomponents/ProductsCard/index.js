@@ -1,14 +1,44 @@
 import React from 'react';
-import { Card } from 'antd';
+import { Card, Row, Typography } from 'antd';
+import RatingStars from '../../../../../../common/rating';
 const { Meta } = Card;
 function SearchPageProductsCard() {
+    const TitltComponent = () => {
+        return (
+            <Typography>
+                <Typography.Title
+                    level={5}
+                    className="SearchProductTitle"
+                    ellipsis={{ rows: 1 }}>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quos inventore. Reprehenderit amet impedit sunt, ratione non dolorum aspernatur odio. Rem natus sequi laborum error, totam numquam voluptatum omnis, eveniet quo voluptas laboriosam quasi alias doloribus perferendis velit aliquid illo similique ut voluptatibus quisquam minima sunt. Laboriosam nesciunt, architecto molestias eveniet dolores exercitationem repellendus eligendi totam facere quae doloremque!
+                </Typography.Title>
+                <Typography.Text className='SearchProductPrice flex vfcenter'>
+                    Rs 26.00 <RatingStars />
+                </Typography.Text>
+            </Typography>
+        )
+    }
+    const DescriptionComponent = () => {
+        return (
+            <Row>
+                <Typography>
+                    <Typography.Text
+                        className="SearchProductTitle"
+                    >
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quos inventore. Reprehenderit amet impedit sunt, ratione non dolorum aspernatur odio. Rem natus
+                    </Typography.Text>
+                </Typography>
+            </Row>
+        )
+    }
     return (
         <Card
             className='serachpageProductCard'
-            hoverable
             cover={<img className='productcardimg' alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
         >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta
+                title={<TitltComponent />}
+                description={<DescriptionComponent />} />
         </Card>
     );
 

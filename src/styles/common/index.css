@@ -8,12 +8,18 @@
 @import "./Loader/index.css";
 @import "./ProductGallery/index.css";
 @import "./Errors/index.css";
+@import "./Rating/index.css";
 
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: var(--Josefin);
+}
+body,
+.navbar {
+  max-width: 1700px;
+  margin: auto;
 }
 
 img,
