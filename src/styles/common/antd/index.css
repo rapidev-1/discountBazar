@@ -19,17 +19,17 @@
   max-width: 100%;
 }
 
-.ant-col:not(
-    .navbar .ant-col,
-    .footerUpper,
-    .footerLower,
-    .ant-drawer-title .ant-col,
-    .breadcrumbParent
-  ) {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
 @media screen and (max-width: 400px) {
+  .ant-col:not(
+      .navbar .ant-col,
+      .footerUpper,
+      .footerLower,
+      .ant-drawer-title .ant-col,
+      .breadcrumbParent
+    ) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   .ant-row {
     margin-inline: unset !important;
   }
