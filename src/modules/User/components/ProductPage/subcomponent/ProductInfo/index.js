@@ -13,9 +13,11 @@ function index() {
           <Image src={img1} className="imageBig" alt="Slow Internet :( " />
         </div>
         <div className="product-left-down">
+        <Image.PreviewGroup>
           <Image src={img2} className="imageSmall" alt="Slow Internet :( " />
           <Image src={img3} className="imageSmall" alt="Slow Internet :( " />
           <Image src={img4} className="imageSmall" alt="Slow Internet :( " />
+        </Image.PreviewGroup>
         </div>
       </div>
       <div className="product-right">

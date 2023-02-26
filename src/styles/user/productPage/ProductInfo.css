@@ -161,8 +161,8 @@ flex-direction: row;
     /* border: 1px solid; */
 }
 .imageSmall {
-    max-width: 148px !important;
-    max-height: 152px !important;
+    /* max-width: 148px !important; */
+    /* max-height: 152px !important; */
     /* border: 1px solid; */
 }
 }
@@ -175,10 +175,10 @@ flex-direction: row;
 .product-left-down {
     width: 25%;
     height: 100%;
-    /* border: 1px solid; */
+    border: 1px solid;
 }
 .imageSmall {
-    max-width: 148px !important;
-    max-height: 152px !important;
+    /* max-width: 148px !important; */
+    /* max-height: 152px !important; */
 }
 }
