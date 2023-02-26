@@ -12,7 +12,7 @@ export const responsiveSliderCards = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 993 },
-    items: 3,
+    items: 4,
     slidesToSlide: 1,
   },
   tablet: {

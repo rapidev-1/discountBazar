@@ -35,6 +35,7 @@ function SearchPageProductsCard() {
     }
     return (
         <Card
+            hoverable
             onClick={() => navigate(`/product/123`)}
             className='serachpageProductCard'
             cover={<img className='productcardimg' alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
