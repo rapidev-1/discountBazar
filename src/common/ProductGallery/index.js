@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Cards";
-import { cardsData } from "../../utility/galleryProduct/index";
+import Card from "../cards";
+import { cardsData } from "../../utility/galleryProduct/index.js"
 import { Select, Grid, Input, Col, Row } from "antd";
 
 function Index({ vendorValue }) {
@@ -9,7 +9,7 @@ function Index({ vendorValue }) {
   useEffect(() => {
     if (breakpoints['xs'])
       setvalue("Sort By")
-    else setvalue("") 
+    else setvalue("")
   }, [breakpoints])
   const handleChange = (value) => {
     setvalue(value)
@@ -77,6 +77,6 @@ function Index({ vendorValue }) {
       </div>
     </div>
   );
-} 
+}
 
 export default Index;

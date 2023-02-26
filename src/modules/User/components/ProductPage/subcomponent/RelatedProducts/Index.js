@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row } from "antd";
-import { cards } from "../../../../../../utility/galleryProduct/index";
-import Card from "../../../../../../common/ProductGallery/Cards/index"
+import { cards } from '../../../../../../utility/galleryProduct';
+import Card from "../../../../../../common/cards"
+
 function Index({ vendorValue }) {
   return (
     <div className="SectionPadding related-container">
