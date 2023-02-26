@@ -20,6 +20,7 @@
 }
 
 .ant-col:not(
+    .navbar .ant-col,
     .footerUpper,
     .footerLower,
     .ant-drawer-title .ant-col,
