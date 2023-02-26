@@ -1,5 +1,5 @@
 import React from "react";
-import { Rate,Image } from "antd";
+import { Rate, Image } from "antd";
 import img1 from "../../../../../../common/Images/bag1.png";
 import img2 from "../../../../../../common/Images/bag2.png";
 import img3 from "../../../../../../common/Images/bag3.png";

@@ -1,3 +1,4 @@
+@import "./truncate/index.css";
 .ant-typography.HeadingDark {
   color: var(--headingColor);
   font-size: 42px;

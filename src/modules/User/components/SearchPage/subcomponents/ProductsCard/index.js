@@ -1,8 +1,10 @@
 import React from 'react';
 import { Card, Row, Typography } from 'antd';
 import RatingStars from '../../../../../../common/rating';
+import { useNavigate } from 'react-router-dom';
 const { Meta } = Card;
 function SearchPageProductsCard() {
+    const navigate = useNavigate()
     const TitltComponent = () => {
         return (
             <Typography>
@@ -23,7 +25,7 @@ function SearchPageProductsCard() {
             <Row>
                 <Typography>
                     <Typography.Text
-                        className="SearchProductTitle"
+                        className="SearchProductDesc truncate2 textLighter"
                     >
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quos inventore. Reprehenderit amet impedit sunt, ratione non dolorum aspernatur odio. Rem natus
                     </Typography.Text>
@@ -33,6 +35,7 @@ function SearchPageProductsCard() {
     }
     return (
         <Card
+            onClick={() => navigate(`/product/123`)}
             className='serachpageProductCard'
             cover={<img className='productcardimg' alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
         >

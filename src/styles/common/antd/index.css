@@ -1,17 +1,16 @@
 .ant-layout {
-  /* background-color: var(--bgSoft); */
   background-color: white !important;
 }
 
-:where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-header,
-:where(.css-diro6f).ant-layout .ant-layout-header {
+.ant-layout-header,
+.ant-layout .ant-layout-header {
   height: unset !important;
   padding: 0px !important;
   line-height: unset !important;
 }
 
-:where(.css-dev-only-do-not-override-diro6f).ant-layout .ant-layout-footer,
-:where(.css-diro6f).ant-layout .ant-layout-footer {
+.ant-layout-footer,
+.ant-layout .ant-layout-footer {
   background-color: unset;
   padding: unset;
 }
@@ -20,18 +19,16 @@
   max-width: 100%;
 }
 
+.ant-col:not(
+    .footerUpper,
+    .footerLower,
+    .ant-drawer-title .ant-col,
+    .breadcrumbParent
+  ) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 @media screen and (max-width: 400px) {
-  .ant-col:not(
-      .footerUpper,
-      .footerLower,
-      .ant-drawer-title .ant-col,
-      .breadcrumbParent,
-
-    ) {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
   .ant-row {
     margin-inline: unset !important;
   }

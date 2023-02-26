@@ -3,10 +3,12 @@
   padding: calc(var(--py) * 3);
   box-shadow: var(--shadow2);
   border: unset;
+  height: 230px;
+  user-select: none;
 }
 .serachpageProductCard .ant-card-cover {
-  min-width: 30%;
-  height: 220px;
+  min-width: 27%;
+  height: 100%;
 }
 
 .productcardimg {
@@ -22,39 +24,30 @@
 }
 
 .ant-card-body .SearchProductTitle {
-  font-size: 18px;
+  font-size: 21.5px;
   color: var(--headingColor);
   font-family: var(--Josefin);
   margin-bottom: 4px;
+  font-weight: 600;
+}
+.SearchProductDesc {
+  font-size: 400;
 }
 .SearchProductPrice {
   color: var(--headingColor);
   font-family: var(--Josefin);
   font-size: 13.5px;
 }
-@media screen and (max-width: 992px) {
-  .serachpageProductCard .ant-card-cover {
-    width: 25%;
-    /* height: 100%; */
-    /* height: 180px; */
-  }
-}
-@media screen and (max-width: 767px) {
-  .serachpageProductCard .ant-card-cover {
-    min-width: unset;
-    height: 100px;
-  }
-}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .serachpageProductCard {
     flex-direction: column;
+    height: 300px;
   }
   .serachpageProductCard .ant-card-cover {
-    min-width: 100%;
-    height: 180px;
+    height: 48%;
   }
   .serachpageProductCard .ant-card-body {
-    padding-inline: 0;
+    max-width: 100%;
   }
 }
