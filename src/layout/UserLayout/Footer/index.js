@@ -22,8 +22,9 @@ const CustomerCare = {
         { title: "FAQs", url: "/faqs" },
         { title: "MY Account", url: "/profile" },
         { title: "Privacy Policy", url: "/privacypoilicy" },
-        { title: "Orders History", url: "/orderhistory" },
         { title: "Order Tracking", url: "/ordertracking" },
+        // { title: "Orders History", url: "/orederhistory" },
+        { title: "Orders Completion", url: "/ordercomplete" },
     ]
 }
 

@@ -7,6 +7,7 @@ import GetLoader from '../../common/GetLoader';
 const FAQS = React.lazy(() => import("./components/Faqs"))
 const ErrorPage = React.lazy(() => import("../../common/Errors/404"))
 const SearchPage = React.lazy(() => import('./components/SearchPage'));
+const OrderComplete = React.lazy(() => import('./components/ordercomplete'));
 
 function UserRoutes() {
   return (
@@ -20,6 +21,7 @@ function UserRoutes() {
           <Route path="product/:id" element={<ProductPage />} />
           <Route path="search" element={<SearchPage />} />
           <Route path="faqs" element={<FAQS />} />
+          <Route path="ordercomplete" element={<OrderComplete />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
         <Route path="login" element={<LoginPage />} />

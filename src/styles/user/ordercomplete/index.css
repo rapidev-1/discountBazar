@@ -1,0 +1,48 @@
+.ordercompleteresultWrapper {
+  max-width: 70%;
+  margin: 70px auto;
+  border-left: 1px solid var(--pinkColorLighter);
+  border-bottom: 1px solid var(--pinkColorLighter);
+  position: relative;
+}
+.ordercompleteresult {
+  padding: 0px 0 20px 0;
+}
+
+#clock {
+  position: absolute;
+  left: -30px;
+  top: -50px;
+  width: 60px;
+}
+#checklist {
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+  width: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .ordercompleteresultWrapper {
+    max-width: 80%;
+  }
+  .ordercompleteresult {
+    padding: 0 30px 40px 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ordercompleteresultWrapper {
+    max-width: 100%;
+    border: none;
+  }
+  .ordercompleteresult {
+    padding: 0 30px 40px 30px;
+  }
+  #clock,
+  #checklist {
+    display: none;
+  }
+  .ordercompleteresult .textLighter br {
+    display: none;
+  }
+}
