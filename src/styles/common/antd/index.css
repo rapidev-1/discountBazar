@@ -25,7 +25,8 @@
       .footerUpper,
       .footerLower,
       .ant-drawer-title .ant-col,
-      .breadcrumbParent
+      .breadcrumbParent,
+      .CompareSearchBarCol
     ) {
     padding-left: 0 !important;
     padding-right: 0 !important;

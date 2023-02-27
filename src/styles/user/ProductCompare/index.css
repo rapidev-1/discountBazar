@@ -1,0 +1,26 @@
+.CompareSearchBar {
+}
+.CompareSearchBarCol {
+  background-color: var(--lightblueBg);
+  border-radius: 6px;
+  border: 1.4px solid var(--pinkColorLighter);
+  padding: 20px 25px;
+}
+
+.CompareSearchBarCol .ant-row {
+  margin-left: -5px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .CompareSearchBarCol .ant-row {
+    margin: 0px !important;
+  }
+  .CompareSearchBarCol {
+    padding: 15px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .CompareSearchBarCol {
+    padding: 15px 10px !important;
+  }
+}
