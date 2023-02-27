@@ -11,7 +11,7 @@ function OrderComplete() {
         </p>
     return (
         <Fragment>
-            <Banner title={"Order Completed"} />
+            <Banner title={"complete"} />
             <Row className="section">
                 <Col span={24} className="ordercompleteresultWrapper">
                     <img src="/assets/icons/clock.svg" id='clock' alt="" />

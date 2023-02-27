@@ -25,8 +25,12 @@ export const map = {
         title: "FAQ",
         url: <BreadCrumbs value={"faq"} />
     },
-    'Order Completed': {
+    complete: {
         title: "Order Completed",
         url: <BreadCrumbs value={"Order Complete"} />
+    },
+    compare: {
+        title: "Find the Best Product for You",
+        url: <BreadCrumbs value={"Product Compare"} />
     }
 }

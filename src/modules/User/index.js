@@ -8,6 +8,7 @@ const FAQS = React.lazy(() => import("./components/Faqs"))
 const ErrorPage = React.lazy(() => import("../../common/Errors/404"))
 const SearchPage = React.lazy(() => import('./components/SearchPage'));
 const OrderComplete = React.lazy(() => import('./components/ordercomplete'));
+const ProductCompare = React.lazy(() => import('./components/ProductCompare'));
 
 function UserRoutes() {
   return (
@@ -22,6 +23,7 @@ function UserRoutes() {
           <Route path="search" element={<SearchPage />} />
           <Route path="faqs" element={<FAQS />} />
           <Route path="ordercomplete" element={<OrderComplete />} />
+          <Route path="productcompare" element={<ProductCompare />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
         <Route path="login" element={<LoginPage />} />
