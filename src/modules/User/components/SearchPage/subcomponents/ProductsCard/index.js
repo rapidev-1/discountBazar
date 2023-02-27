@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Row, Typography } from 'antd';
-import RatingStars from '../../../../../../common/rating';
+import RatingStars from '../../../../../../common/Product/rating';
 import { useNavigate } from 'react-router-dom';
 import ProductIcons from "../../../../../../common/Product/productIcons"
 
