@@ -9,7 +9,7 @@ function BreadCrumbs({ value }) {
                 <Link to={"/"}>Home</Link>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
-                <Link to={`/${value}`}>{value}</Link>
+                <Link to={`/${String(value).toLowerCase().replace(/\s/g, "")}`}>{value}</Link>
             </Breadcrumb.Item>
         </Breadcrumb>
     )

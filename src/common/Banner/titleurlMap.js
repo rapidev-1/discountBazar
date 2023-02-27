@@ -27,6 +27,6 @@ export const map = {
     },
     'Order Completed': {
         title: "Order Completed",
-        url: <BreadCrumbs value={"ordercomplete"} />
+        url: <BreadCrumbs value={"Order Complete"} />
     }
 }
