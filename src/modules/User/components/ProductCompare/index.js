@@ -1,6 +1,7 @@
 import { Col, Row } from 'antd'
 import React, { Fragment } from 'react'
 import Banner from '../../../../common/Banner'
+import CompareItems from './CompareItems'
 import ProductCompareHeading from './Heading'
 import CompareSearchBar from './Heading/CompareSearchBar'
 
@@ -12,6 +13,7 @@ function ProductCompare() {
                 <Col span={24}>
                     <ProductCompareHeading />
                     <CompareSearchBar />
+                    <CompareItems />
                 </Col>
             </Row>
         </Fragment>

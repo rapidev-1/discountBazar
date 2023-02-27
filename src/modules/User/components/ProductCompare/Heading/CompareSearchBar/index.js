@@ -8,12 +8,19 @@ function CompareSearchBar() {
     const [active, setative] = useState()
     const [typed, settyped] = useState(false)
     useEffect(() => {
+        const event = window.addEventListener("keydown", (e) => {
+            if (e.keyCode === 27) {
+                setp1()
+                setp2()
+            }
+        })
         let id = setTimeout(() => {
             if ((active === 1 && p1) || (active === 2 && p2))
                 settyped(true)
         }, 1500);
         return () => {
             clearTimeout(id)
+            window.removeEventListener("keypress", event)
         }
     }, [p1, p2, active])
     const handleinput = (active, e) => {
