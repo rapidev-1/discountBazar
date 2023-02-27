@@ -8,9 +8,9 @@
 @import "./Loader/index.css";
 @import "./ProductGallery/index.css";
 @import "./Errors/index.css";
-@import "./Rating/index.css";
 @import "./FilterBar/index.css";
 @import "./banner/index.css";
+@import "./product/index.css";
 
 html {
   scroll-behavior: smooth;

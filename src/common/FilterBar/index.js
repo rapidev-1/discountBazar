@@ -8,7 +8,6 @@ function FilterBar() {
         setvalue(value)
     };
 
-
     return (
         <Row
             align={"top"}

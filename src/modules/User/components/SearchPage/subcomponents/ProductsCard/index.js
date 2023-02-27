@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, Row, Typography } from 'antd';
 import RatingStars from '../../../../../../common/rating';
 import { useNavigate } from 'react-router-dom';
+import ProductIcons from "../../../../../../common/Product/productIcons"
+
 const { Meta } = Card;
 function SearchPageProductsCard() {
     const navigate = useNavigate()
@@ -9,6 +11,7 @@ function SearchPageProductsCard() {
         return (
             <Typography>
                 <Typography.Title
+                    onClick={() => navigate(`/product/123`)}
                     level={5}
                     className="SearchProductTitle"
                     ellipsis={{ rows: 1 }}>
@@ -30,16 +33,20 @@ function SearchPageProductsCard() {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quos inventore. Reprehenderit amet impedit sunt, ratione non dolorum aspernatur odio. Rem natus
                     </Typography.Text>
                 </Typography>
+                <ProductIcons show />
             </Row>
         )
     }
     return (
         <Card
             hoverable
-            onClick={() => navigate(`/product/123`)}
             className='serachpageProductCard'
-            cover={<img loading="lazy" className='productcardimg' alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-        >
+            cover={
+                <img
+                    loading="lazy"
+                    className='productcardimg'
+                    alt="example"
+                    src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
             <Meta
                 title={<TitltComponent />}
                 description={<DescriptionComponent />} />

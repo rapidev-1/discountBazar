@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from "antd";
 import { cards } from '../../../../../../utility/galleryProduct';
-import Card from "../../../../../../common/cards"
+import Card from "../../../../../../common/Product/cards"
 
 function Index({ vendorValue }) {
   return (

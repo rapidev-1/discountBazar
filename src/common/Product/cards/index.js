@@ -1,19 +1,15 @@
 import React from 'react'
-import DiscountBazarIcon from "../Icons/index";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
 import { useNavigate } from 'react-router-dom';
+import ProductIcons from '../productIcons';
 function Index({ img, title, vendor, price, vendorValue }) {
   let navigate = useNavigate();
   return (
     <div className="cardGallery">
       <div className="cardGallery-card" >
         <div className="cardGallery-card-up">
-          <div className="cardGallery-card-icons">
-            <DiscountBazarIcon text={""} icon={"cart"} />
-            <DiscountBazarIcon text={""} icon={"search"} />
-            <DiscountBazarIcon text={""} icon={"wishlist"} />
-          </div>
+          <ProductIcons />
           <div className="cardGallery-card-vendorBox">
             {vendorValue && (
               <div
