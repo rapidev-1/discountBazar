@@ -10,8 +10,8 @@ function CompareSearchBar() {
     useEffect(() => {
         const event = window.addEventListener("keydown", (e) => {
             if (e.keyCode === 27) {
-                setp1()
-                setp2()
+                settyped(false)
+                setative(null)
             }
         })
         let id = setTimeout(() => {
