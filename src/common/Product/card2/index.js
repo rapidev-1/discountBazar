@@ -1,17 +1,16 @@
-import React from 'react';
-import { Card, Row, Typography } from 'antd';
-import RatingStars from '../../../../../../common/Product/rating';
 import { useNavigate } from 'react-router-dom';
-import ProductIcons from "../../../../../../common/Product/productIcons"
+import { Card, Row, Typography } from 'antd';
+import ProductIcons from "../productIcons"
+import RatingStars from '../rating';
 
 const { Meta } = Card;
-function SearchPageProductsCard() {
+function ProductsCard2({ noicons }) {
     const navigate = useNavigate()
     const TitltComponent = () => {
         return (
             <Typography>
                 <Typography.Title
-                    onClick={() => navigate(`/product/123`)}
+                    onClick={() => noicons ? null : navigate(`/product/123`)}
                     level={5}
                     className="SearchProductTitle"
                     ellipsis={{ rows: 1 }}>
@@ -33,7 +32,7 @@ function SearchPageProductsCard() {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quos inventore. Reprehenderit amet impedit sunt, ratione non dolorum aspernatur odio. Rem natus
                     </Typography.Text>
                 </Typography>
-                <ProductIcons show />
+                {noicons ? null : <ProductIcons show />}
             </Row>
         )
     }
@@ -55,4 +54,4 @@ function SearchPageProductsCard() {
 
 }
 
-export default SearchPageProductsCard
+export default ProductsCard2

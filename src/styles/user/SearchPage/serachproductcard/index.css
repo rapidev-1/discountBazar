@@ -5,6 +5,7 @@
   border: unset;
   height: 230px;
   user-select: none;
+  max-width: 100%;
 }
 .serachpageProductCard .ant-card-cover {
   min-width: 27%;

@@ -2,7 +2,7 @@ import { Col, Row } from 'antd'
 import React, { Fragment } from 'react'
 import Banner from "../../../../common/Banner"
 import FilterBar from '../../../../common/FilterBar'
-import SearchPageProductsCard from './subcomponents/ProductsCard'
+import ProductsCard2 from '../../../../common/Product/card2'
 function SearchPage() {
     return (
         <Fragment>
@@ -16,7 +16,7 @@ function SearchPage() {
                     Array(10).fill(null).map((e, i) => {
                         return (
                             <Col span={24}>
-                                <SearchPageProductsCard />
+                                <ProductsCard2 />
                             </Col>
                         )
                     })

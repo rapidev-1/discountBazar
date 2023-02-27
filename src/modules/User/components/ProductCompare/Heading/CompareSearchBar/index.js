@@ -1,7 +1,28 @@
 import { Col, Input, Row, Select } from 'antd'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import CompareProductDropDown from './DropDown'
 
 function CompareSearchBar() {
+    const [p1, setp1] = useState()
+    const [p2, setp2] = useState()
+    const [typed, settyped] = useState(false)
+    useEffect(() => {
+        let id = setTimeout(() => {
+            settyped(true)
+        }, 1500);
+        return () => {
+            clearTimeout(id)
+        }
+    }, [p1, p2])
+    const handleinput = (active, e) => {
+        settyped(false)
+        if (active === 1) {
+            setp1(e)
+        }
+        else {
+            setp2(e)
+        }
+    }
     return (
         <Row className='SectionPadding CompareSearchBar'>
             <Col className='CompareSearchBarCol' span={24}>
@@ -14,11 +35,13 @@ function CompareSearchBar() {
                                 { lg: 20, md: 10, sm: 10, xs: 10 }]}>
                             <Col sm={12} xs={24}>
                                 <Input
+                                    onChange={e => handleinput(1, e.currentTarget.value)}
                                     placeholder='search product...'
                                     type='text' />
                             </Col>
                             <Col sm={12} xs={24}>
                                 <Input
+                                    onChange={e => handleinput(2, e.currentTarget.value)}
                                     placeholder='search product...'
                                     type='text' />
                             </Col>
@@ -58,6 +81,8 @@ function CompareSearchBar() {
                         </Row>
                     </Col>
                 </Row>
+                {typed ? <CompareProductDropDown value={p1 || p2} /> : null}
+
             </Col>
         </Row>
     )
