@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Input, Row, Col } from 'antd';
-import DiscountBazarIcon from "../../../Icons"
-import Logo from "../../../Logo"
+import { Row, Col } from 'antd';
+import DiscountBazarIcon from "../../../common/Icons"
+import Logo from "../../../common/Logo"
 import { Link } from "react-router-dom"
-import SearchBar from '../../../SearchBar';
+import SearchBar from '../../../common/SearchBar';
 
 const Categories = {
     title: "Categories",

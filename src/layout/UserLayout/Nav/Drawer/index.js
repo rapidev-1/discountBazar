@@ -1,8 +1,8 @@
 import { Avatar, Col, Drawer, Row, Typography } from 'antd'
 import { Link } from "react-router-dom"
 import React from 'react'
-import Logo from '../../../../Logo'
-import SearchBar from '../../../../SearchBar'
+import Logo from '../../../../common/Logo'
+import SearchBar from '../../../../common/SearchBar'
 
 const Links = [
     { title: "Home", url: "/" },

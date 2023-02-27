@@ -10,3 +10,19 @@
   font-size: 22px;
   font-weight: 600;
 }
+
+.filterSelectCol label.colorHeading {
+  font-weight: 400;
+  font-size: 1rem !important;
+}
+.filterSelectCol {
+  display: flex;
+  align-items: center;
+}
+.filterBarSelect {
+  margin-left: 0.7rem;
+  /* min-width: 50%; */
+}
+.filterSelectCol .filterBarSelect {
+  flex: 1;
+}

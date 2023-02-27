@@ -16,6 +16,9 @@
 .flex-start {
   justify-content: flex-start;
 }
+.hfbetween {
+  justify-content: space-between;
+}
 .texcenter {
   text-align: center;
 }

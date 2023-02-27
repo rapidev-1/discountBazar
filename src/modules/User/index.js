@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from "react-router-dom"
 import { LandingPage, LoginPage, MultiShop, ProductPage, SignupPage, SingleShop } from './components'
 import { AboutPage } from "./components";
-import UserLayout from '../../common/layout/UserLayout'
+import UserLayout from "../../layout/UserLayout"
 import GetLoader from '../../common/GetLoader';
 const ErrorPage = React.lazy(() => import("../../common/Errors/404"))
 const SearchPage = React.lazy(() => import('./components/SearchPage'));

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from "antd"
-import DiscountBazarIcon from '../../../Icons'
+import DiscountBazarIcon from '../../../common/Icons'
 import { useNavigate } from 'react-router-dom'
 function Uppernavbar() {
   const navigate = useNavigate()

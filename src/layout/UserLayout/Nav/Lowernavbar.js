@@ -1,9 +1,7 @@
-import Logo from '../../../Logo'
-import { Row, Col, Input } from "antd"
-import DiscountBazarIcon from '../../../Icons';
+import Logo from '../../../common/Logo'
+import { Row, Col } from "antd"
 import { Link } from "react-router-dom"
-import SearchBar from '../../../SearchBar';
-const { Search } = Input
+import SearchBar from '../../../common/SearchBar';
 
 function Lowernavbar() {
   const onSearch = (value) => console.log(value);
