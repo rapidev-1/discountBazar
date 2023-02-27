@@ -25,18 +25,19 @@
 
 .cardGallery-card-icons {
   position: absolute;
-  top: 0px;
+  top: 35%;
   left: 30px;
   width: 100%;
-  height: 100%;
+  height: 40%;
   display: flex;
   transform: translateX(-30px);
+  transform: translateY(-50%);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   opacity: 0;
   gap: 1rem;
-  z-index: 1;
+  z-index: 2;
   /* border:1px solid; */
 }
 .cardGallery-card-vendor {

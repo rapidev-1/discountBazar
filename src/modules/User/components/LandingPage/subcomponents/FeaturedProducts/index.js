@@ -5,7 +5,7 @@ import {
   watches,
   responsiveSliderCards,
 } from "../../../../../../utility/FeaturedProducts";
-import Cards from "./Cards";
+import Cards from "../../../../../../common/Product/cards"
 function Featureproducts() {
   return (
     <div className="featuredProducts">
@@ -19,7 +19,7 @@ function Featureproducts() {
         arrows={false}
       >
         {watches.map((e, i) => (
-          <Cards id={i} key={i} img={e.img} title={e.title} desc={e.desc} />
+          <Cards id={i} key={i} img={e.img} title={e.title} desc={e.desc} price={400} />
         ))}
       </Carousel>
     </div>

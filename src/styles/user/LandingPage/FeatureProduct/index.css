@@ -1,9 +1,6 @@
-@import "./cards.css";
-
 .featuredProducts {
   display: flex;
   flex-direction: column;
-  /* // border: 1px solid; */
   margin-top: 80px;
   height: 100%;
   width: 100%;
