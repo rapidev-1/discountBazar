@@ -3,9 +3,8 @@ import ProductsCard2 from '../../../../../../../common/Product/card2'
 
 function CompareProductDropDown({ value }) {
 
-
     return (
-        <Row style={{ width: "100%", opacity: value ? 1 : 0 }}>
+        <Row style={{ width: "100%" }}>
             <Col span={24} className="CompareProductDropDownCol">
                 <List
                     className='CompareProductDropDownList'

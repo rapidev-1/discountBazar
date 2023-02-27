@@ -5,17 +5,20 @@ import CompareProductDropDown from './DropDown'
 function CompareSearchBar() {
     const [p1, setp1] = useState()
     const [p2, setp2] = useState()
+    const [active, setative] = useState()
     const [typed, settyped] = useState(false)
     useEffect(() => {
         let id = setTimeout(() => {
-            settyped(true)
+            if ((active === 1 && p1) || (active === 2 && p2))
+                settyped(true)
         }, 1500);
         return () => {
             clearTimeout(id)
         }
-    }, [p1, p2])
+    }, [p1, p2, active])
     const handleinput = (active, e) => {
         settyped(false)
+        setative(active)
         if (active === 1) {
             setp1(e)
         }
