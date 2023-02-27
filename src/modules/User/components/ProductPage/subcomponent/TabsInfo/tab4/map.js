@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import RoutingMachine from './RouteMachine'
 const Map = () => {
@@ -7,13 +6,7 @@ const Map = () => {
   const lat2 = 33.64472
   const lng2 = 72.98944
   const center = [(lat1 + lat2) / 2, (lng1 + lng2) / 2]
-  const timer = 4000
-
-  const [timeup, settimeup] = useState(false)
-
-  setTimeout(() => {
-    settimeup(true)
-  }, timer);
+  const timer = 3000
 
 
   function ChangeView({ center, zoom }) {
@@ -24,6 +17,10 @@ const Map = () => {
 
     return null;
   }
+
+  let markericons = ".leaflet-marker-icon"
+  markericons = document.querySelectorAll(markericons)
+  // markericons is array of marker icons in map, we can change icon by markericons[0].src=""
   return (
     <MapContainer
       trackResize
@@ -39,13 +36,13 @@ const Map = () => {
         attribution='Discount Bazar'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[lat1, lng1]}>
-        <Popup autoPan>
+      <Marker position={[lat1, lng1]} >
+        <Popup className='youiconmap'>
           (You)
         </Popup>
       </Marker>
       <Marker position={[lat2, lng2]}>
-        <Popup autoPan>
+        <Popup className='vendoriconmap'>
           (Vendor)
         </Popup>
       </Marker>

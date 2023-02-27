@@ -1,6 +1,6 @@
 .serachpageProductCard {
   display: flex;
-  padding: calc(var(--py) * 3);
+  padding: calc(var(--py) * 2);
   box-shadow: var(--shadow2);
   border: unset;
   height: 230px;
