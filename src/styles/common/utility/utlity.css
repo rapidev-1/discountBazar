@@ -34,6 +34,10 @@
   font-family: var(--Josefin);
   font-size: 0.9rem !important;
 }
+.HeadingDark {
+  color: var(--headingColor);
+  font-family: var(--Josefin);
+}
 
 .dot {
   color: var(--pinkColor);

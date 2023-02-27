@@ -1,0 +1,24 @@
+.leaflet-container {
+  z-index: 0;
+  border-radius: 6px;
+}
+
+.leaflet-pane.leaflet-map-pane {
+  height: 100%;
+}
+.leaflet-container a[title="A JavaScript library for interactive maps"] {
+  display: none;
+}
+.leaflet-container a[title="A JavaScript library for interactive maps"] + span {
+  display: none;
+}
+.leaflet-routing-alternatives-container {
+  display: none;
+}
+.leaflet-control-attribution.leaflet-control {
+  color: white;
+  background-color: var(--headingColor) !important;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  letter-spacing: 0.5px;
+}

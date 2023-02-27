@@ -20,7 +20,8 @@
 @media screen and (max-width: 992px) {
   .ant-typography.HeadingDark {
     font-size: 1.6rem;
-    text-align: center;
+    /* background-color: red; */
+    /* text-align: center; */
   }
   .ant-typography.HeadingCustom {
     font-size: 20px !important;
@@ -28,7 +29,7 @@
 }
 @media screen and (max-width: 400px) {
   .ant-typography.HeadingDark {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .ant-typography.HeadingCustom {
     font-size: 17px !important;

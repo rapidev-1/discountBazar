@@ -1,0 +1,12 @@
+.filterBar {
+  margin-top: 80px;
+}
+.filterBar .textLighter {
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.12px;
+}
+.filterBar .HeadingDark {
+  font-size: 22px;
+  font-weight: 600;
+}

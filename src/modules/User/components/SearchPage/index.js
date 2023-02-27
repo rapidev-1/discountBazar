@@ -1,11 +1,13 @@
 import { Col, Row } from 'antd'
 import React, { Fragment } from 'react'
 import Banner from "../../../../common/Banner"
+import FilterBar from '../../../../common/FilterBar'
 import SearchPageProductsCard from './subcomponents/ProductsCard'
 function SearchPage() {
     return (
         <Fragment>
             <Banner title={"search"} />
+            <FilterBar />
             <Row
                 gutter={[20, 15]}
                 justify={"space-between"}
