@@ -25,3 +25,28 @@
 .vendoriconmap {
   /* background-color: rebeccapurple; */
 }
+.recalculate {
+  z-index: 400;
+  position: absolute;
+  left: 0.9%;
+  top: 16%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  display: grid;
+  place-content: center;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid transparent;
+  transition: all 0.1s;
+  box-shadow: var(--shadow1);
+}
+
+.recalculate:hover {
+  background-color: white;
+  border: 1px solid var(--headingColor);
+}
+.recalculate:active {
+  background-color: rgb(243, 243, 243);
+  border-color: transparent;
+  color: var(--headingColor);
+}
