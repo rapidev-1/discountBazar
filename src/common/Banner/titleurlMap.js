@@ -24,5 +24,9 @@ export const map = {
     faq: {
         title: "FAQ",
         url: <BreadCrumbs value={"faq"} />
+    },
+    'Order Completed': {
+        title: "Order Completed",
+        url: <BreadCrumbs value={"Order Completed"} />
     }
 }
