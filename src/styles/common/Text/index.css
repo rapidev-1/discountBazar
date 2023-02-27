@@ -1,7 +1,7 @@
 @import "./truncate/index.css";
 .ant-typography.HeadingDark {
   color: var(--headingColor);
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 600;
   font-family: var(--Josefin);
   user-select: none;

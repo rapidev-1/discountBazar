@@ -1,0 +1,42 @@
+.FAQFORM {
+  display: block;
+  height: unset;
+}
+.FAQFORM > .ant-col {
+  padding-block: calc(var(--py) * 20);
+  background-color: var(--lightblueBg);
+}
+.FAQFORM .colorHeading {
+  padding-inline: calc(var(--py) * 10);
+  font-size: 1.4rem !important;
+}
+.FAQFORM .ant-form {
+  padding-inline: calc(var(--py) * 10);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.FAQFORM .ant-form input {
+  min-height: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .FAQFORM {
+    padding-inline: 0;
+  }
+  .FAQFORM > .ant-col {
+    max-width: 100%;
+  }
+  .FAQFORM h1 {
+    padding-block: 30px;
+  }
+  .FAQFORM .ant-form {
+    padding-block: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .FAQFORM .ant-form {
+    max-width: 100%;
+    padding-inline: 1.5rem;
+  }
+}

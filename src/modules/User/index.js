@@ -4,6 +4,7 @@ import { LandingPage, LoginPage, MultiShop, ProductPage, SignupPage, SingleShop 
 import { AboutPage } from "./components";
 import UserLayout from "../../layout/UserLayout"
 import GetLoader from '../../common/GetLoader';
+const FAQS = React.lazy(() => import("./components/Faqs"))
 const ErrorPage = React.lazy(() => import("../../common/Errors/404"))
 const SearchPage = React.lazy(() => import('./components/SearchPage'));
 
@@ -18,6 +19,7 @@ function UserRoutes() {
           <Route path="vendorshop/:username" element={<SingleShop />} />
           <Route path="product/:id" element={<ProductPage />} />
           <Route path="search" element={<SearchPage />} />
+          <Route path="faqs" element={<FAQS />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
         <Route path="login" element={<LoginPage />} />

@@ -20,5 +20,9 @@ export const map = {
     search: {
         title: "Search and Shop with Ease",
         url: <BreadCrumbs value={"Search"} />
+    },
+    faq: {
+        title: "FAQ",
+        url: <BreadCrumbs value={"faq"} />
     }
 }

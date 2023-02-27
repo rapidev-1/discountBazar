@@ -24,7 +24,7 @@ function Index({ img, title, vendor, price, vendorValue }) {
           <img src={img} alt="loading...." className="card-image" />
         </div>
         <div className="cardGallery-card-down">
-          <strong>{title}</strong>
+          <strong className='truncate1'>{title}</strong>
           <p>Rs {price}</p>
         </div>
       </div>
