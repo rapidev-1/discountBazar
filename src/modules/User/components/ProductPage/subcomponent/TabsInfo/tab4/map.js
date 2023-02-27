@@ -7,7 +7,7 @@ const Map = () => {
   const lat2 = 33.64472
   const lng2 = 72.98944
   const center = [(lat1 + lat2) / 2, (lng1 + lng2) / 2]
-  const timer = 5000
+  const timer = 4000
 
   const [timeup, settimeup] = useState(false)
 
