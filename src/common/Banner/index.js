@@ -8,7 +8,7 @@ function Banner({
     return (
         <div className="about-banner">
             <div className="about-banner-item">
-                <CenterHeading heading={map[title]?.title} />
+                <CenterHeading className="banner" heading={map[title]?.title} />
                 {map[title]?.url}
             </div>
         </div>

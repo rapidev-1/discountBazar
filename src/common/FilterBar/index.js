@@ -14,7 +14,9 @@ function FilterBar() {
             </Col>
             <Col sm={24} md={12}>
                 <Row style={{ width: "100%" }}>
-                    <Col md={4}>ok</Col>
+                    <Col md={4}>
+                        Per Page
+                    </Col>
                     <Col md={4}>ok</Col>
                     <Col md={4}>ok</Col>
                 </Row>

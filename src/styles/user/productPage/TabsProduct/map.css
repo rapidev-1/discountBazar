@@ -29,7 +29,7 @@
 .recalculate {
   z-index: 400;
   position: absolute;
-  left: 0.9%;
+  left: 11px;
   top: 16%;
   width: 2rem;
   height: 2rem;
@@ -50,4 +50,14 @@
   background-color: rgb(243, 243, 243);
   border-color: transparent;
   color: var(--headingColor);
+}
+
+@media screen and (max-width: 400px) {
+  .leaflet-container {
+    min-height: 400px !important;
+  }
+  .recalculate {
+    top: 78px;
+    left: 11.5px;
+  }
 }

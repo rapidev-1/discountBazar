@@ -1,0 +1,12 @@
+.about-banner {
+}
+@media screen and (max-width: 992px) {
+  .about-banner {
+    max-height: 280px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-banner {
+    max-height: 250px;
+  }
+}

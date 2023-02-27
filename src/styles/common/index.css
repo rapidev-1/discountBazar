@@ -10,6 +10,7 @@
 @import "./Errors/index.css";
 @import "./Rating/index.css";
 @import "./FilterBar/index.css";
+@import "./banner/index.css";
 
 html {
   scroll-behavior: smooth;
