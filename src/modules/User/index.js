@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom"
-import { LandingPage, LoginPage, MultiShop, ProductPage, SignupPage, SingleShop } from './components'
+import { ContactPage, LandingPage, LoginPage, MultiShop, ProductPage, SignupPage, SingleShop } from './components'
 import { AboutPage } from "./components";
 import UserLayout from "../../layout/UserLayout"
 import GetLoader from '../../common/GetLoader';
@@ -22,6 +22,7 @@ function UserRoutes() {
           <Route path="product/:id" element={<ProductPage />} />
           <Route path="search" element={<SearchPage />} />
           <Route path="faqs" element={<FAQS />} />
+          <Route path="contact" element={<ContactPage />} />
           <Route path="ordercomplete" element={<OrderComplete />} />
           <Route path="productcompare" element={<ProductCompare />} />
           <Route path="*" element={<ErrorPage />} />

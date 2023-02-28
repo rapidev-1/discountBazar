@@ -1,4 +1,4 @@
-import { cardsData } from "../../utility/galleryProduct/index.js"
+import { cardsData } from "../../utility/galleryProduct"
 import FilterBar from "../../common/FilterBar"
 import Card from "../Product/cards";
 import { Col, Row } from "antd";

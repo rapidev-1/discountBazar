@@ -9,15 +9,17 @@ import { useNavigate } from "react-router-dom";
 function ProductInfo() {
   const navigate = useNavigate()
   return (
-    <div className="product-container">
+    <div className="product-container"> 
       <div className="product-left">
         <div className="product-left-up">
           <Image src={img1} className="imageBig" alt="Slow Internet :( " />
         </div>
         <div className="product-left-down">
+        <Image.PreviewGroup>
           <Image src={img2} className="imageSmall" alt="Slow Internet :( " />
           <Image src={img3} className="imageSmall" alt="Slow Internet :( " />
           <Image src={img4} className="imageSmall" alt="Slow Internet :( " />
+        </Image.PreviewGroup>
         </div>
       </div>
       <div className="product-right">
@@ -36,16 +38,10 @@ function ProductInfo() {
             elit. Mauris tellus porttitor purus, etc
           </i>
         </p>
-        <strong>
-          <i>Categories</i>
-        </strong>
         <div className="product-right-item">
           <strong>Add to Cart</strong>
           <DiscountBazarIcon text={""} icon={"cart"} />
         </div>
-        <strong>
-          <i>Tags</i>
-        </strong>
         <div className="product-right-item">
           <strong>
             <i>Share </i>

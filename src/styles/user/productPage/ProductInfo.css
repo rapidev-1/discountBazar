@@ -159,11 +159,6 @@
     height: 100%;
     /* border: 1px solid; */
   }
-  .imageSmall {
-    max-width: 148px !important;
-    max-height: 152px !important;
-    /* border: 1px solid; */
-  }
 }
 @media screen and (max-width: 494px) {
   .product-left-up {
@@ -175,9 +170,5 @@
     width: 25%;
     height: 100%;
     /* border: 1px solid; */
-  }
-  .imageSmall {
-    max-width: 148px !important;
-    max-height: 152px !important;
   }
 }

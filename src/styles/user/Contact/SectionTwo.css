@@ -1,0 +1,9 @@
+.contact-sectionTwo-container{
+    display: flex;
+}
+.contact-sectionTwo-Left{
+flex: 1;
+}
+.contact-sectionTwo-Right{
+flex: 1;
+}
