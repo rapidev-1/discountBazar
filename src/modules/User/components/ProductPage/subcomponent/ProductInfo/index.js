@@ -38,9 +38,6 @@ function ProductInfo() {
             elit. Mauris tellus porttitor purus, etc
           </i>
         </p>
-        <strong>
-          <i>Categories</i>
-        </strong>
         <div className="product-right-item">
           <strong>Add to Cart</strong>
           <DiscountBazarIcon text={""} icon={"cart"} />
