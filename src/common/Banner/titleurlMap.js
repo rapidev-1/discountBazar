@@ -1,9 +1,13 @@
 import BreadCrumbs from "../BreadCrumbs";
 
 export const map = {
+    contact: {
+        title: "Contact Us",
+        url: <BreadCrumbs value={"Contact"} />
+    },
     about: {
         title: "About Us",
-        url: <BreadCrumbs value={"about"} />
+        url: <BreadCrumbs value={"About"} />
     },
     shop: {
         title: "Shop",
