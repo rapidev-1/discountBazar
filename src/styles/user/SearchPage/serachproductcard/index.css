@@ -1,50 +1,54 @@
 .serachpageProductCard {
   display: flex;
-  padding: calc(var(--py) * 3);
+  padding: calc(var(--py) * 2);
+  box-shadow: var(--shadow2);
+  border: unset;
+  height: 230px;
+  user-select: none;
+  max-width: 100%;
 }
 .serachpageProductCard .ant-card-cover {
-  width: 500px;
-  height: 230px;
-  /* width: 35%; */
+  min-width: 27%;
+  height: 100%;
 }
+
 .productcardimg {
-  border-radius: 6px !important;
+  border-radius: 4px !important;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
 .serachpageProductCard .ant-card-body {
-  width: 100%;
   border-radius: unset;
-  /* padding-block: 2px; */
+  max-width: 70%;
 }
 
-@media screen and (max-width: 992px) {
-  .serachpageProductCard .ant-card-cover {
-    width: 400px;
-    height: 180px;
-  }
+.ant-card-body .SearchProductTitle {
+  font-size: 20px;
+  color: var(--headingColor);
+  font-family: var(--Josefin);
+  margin-bottom: 4px;
+  font-weight: 600;
 }
+.SearchProductDesc {
+  font-size: 400;
+}
+.SearchProductPrice {
+  color: var(--headingColor);
+  font-family: var(--Josefin);
+  font-size: 13.5px;
+}
+
 @media screen and (max-width: 767px) {
   .serachpageProductCard {
-    /* flex-direction: column; */
-  }
-  .serachpageProductCard .ant-card-cover {
-    width: 150px;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .serachpageProductCard {
     flex-direction: column;
+    height: 300px;
   }
   .serachpageProductCard .ant-card-cover {
-    width: 100%;
-    height: 180px;
+    height: 48%;
   }
   .serachpageProductCard .ant-card-body {
-    padding-inline: 0;
+    max-width: 100%;
   }
 }

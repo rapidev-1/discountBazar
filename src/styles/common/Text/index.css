@@ -1,6 +1,7 @@
+@import "./truncate/index.css";
 .ant-typography.HeadingDark {
   color: var(--headingColor);
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 600;
   font-family: var(--Josefin);
   user-select: none;
@@ -9,17 +10,24 @@
 
 .ant-typography.HeadingCustom {
   font-size: 25px;
-  font-style: italic;
   text-align: left !important;
+  font-family: var(--Josefin);
+}
+.ant-typography.HeadingCustom.small {
+  font-size: 1rem;
 }
 .ant-typography.small {
   margin-bottom: 0px;
+}
+.ant-typography.banner {
+  font-size: 32px;
 }
 
 @media screen and (max-width: 992px) {
   .ant-typography.HeadingDark {
     font-size: 1.6rem;
-    text-align: center;
+    /* background-color: red; */
+    /* text-align: center; */
   }
   .ant-typography.HeadingCustom {
     font-size: 20px !important;
@@ -27,7 +35,7 @@
 }
 @media screen and (max-width: 400px) {
   .ant-typography.HeadingDark {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .ant-typography.HeadingCustom {
     font-size: 17px !important;

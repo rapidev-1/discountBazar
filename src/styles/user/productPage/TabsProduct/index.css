@@ -1,15 +1,16 @@
 @import "./tabOne.css";
 @import "./tabThree.css";
-.tabs-product{
-    padding-inline: var(--px);
-    width: 100%;
-    margin: auto;
-    /* border: 1px solid; */
-    padding: 30px;
-    background-color: var(--lightblueBg);
+@import "./map.css";
+.tabs-product {
+  padding-inline: var(--px);
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid; */
+  padding: 30px;
+  background-color: var(--lightblueBg);
 }
-:where(.css-dev-only-do-not-override-diro6f).ant-tabs .ant-tabs-tab {
-font-size: 22px !important;
-color: var(--headingColor);
-font-weight: 600;
+.ant-tabs .ant-tabs-tab {
+  font-size: 22px !important;
+  color: var(--headingColor);
+  font-weight: 600;
 }

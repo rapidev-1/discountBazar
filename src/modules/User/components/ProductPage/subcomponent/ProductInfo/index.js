@@ -1,13 +1,15 @@
 import React from "react";
-import { Rate,Image } from "antd";
+import { Rate, Image, Button } from "antd";
 import img1 from "../../../../../../common/Images/bag1.png";
 import img2 from "../../../../../../common/Images/bag2.png";
 import img3 from "../../../../../../common/Images/bag3.png";
 import img4 from "../../../../../../common/Images/bag4.png";
 import DiscountBazarIcon from "../../../../../../common/Icons";
-function index() {
+import { useNavigate } from "react-router-dom";
+function ProductInfo() {
+  const navigate = useNavigate()
   return (
-    <div className="product-container">
+    <div className="product-container"> 
       <div className="product-left">
         <div className="product-left-up">
           <Image src={img1} className="imageBig" alt="Slow Internet :( " />
@@ -43,17 +45,19 @@ function index() {
           <strong>Add to Cart</strong>
           <DiscountBazarIcon text={""} icon={"cart"} />
         </div>
-        <strong>
-          <i>Tags</i>
-        </strong>
         <div className="product-right-item">
           <strong>
             <i>Share </i>
           </strong>
+        </div>
+        <div>
+          <Button className="btn" onClick={() => navigate('/productcompare')}>
+            Compare Product
+          </Button>
         </div>
       </div>
     </div>
   );
 }
 
-export default index;
+export default ProductInfo;

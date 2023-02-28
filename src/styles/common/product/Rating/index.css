@@ -1,0 +1,19 @@
+.ratingstars {
+  /* background-color: red; */
+  /* margin: 0px; */
+  margin-top: -6px;
+  margin-left: 30px;
+}
+ul.ant-rate {
+  margin: 0 !important;
+  margin-block: 0;
+  font-size: unset !important;
+  display: flex;
+}
+.ratingstars .ant-rate-star {
+  margin-inline: 4px;
+  margin-inline-end: 0px !important;
+  font-size: 0.8rem;
+  line-height: unset;
+  margin-top: 0px !important;
+}

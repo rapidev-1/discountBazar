@@ -8,12 +8,20 @@
 @import "./Loader/index.css";
 @import "./ProductGallery/index.css";
 @import "./Errors/index.css";
+@import "./FilterBar/index.css";
+@import "./banner/index.css";
+@import "./product/index.css";
 
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: var(--Josefin);
+}
+body,
+.navbar {
+  max-width: 1700px;
+  margin: auto;
 }
 
 img,

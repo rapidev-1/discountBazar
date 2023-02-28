@@ -1,0 +1,28 @@
+.truncate2,
+.truncate3,
+.truncate1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate4 {
+  -webkit-line-clamp: 4; /* for webkit */
+  -moz-box-lines: 4; /* for firefox */
+}
+.truncate3 {
+  -webkit-line-clamp: 3; /* for webkit */
+  -moz-box-lines: 3; /* for firefox */
+}
+.truncate2 {
+  -webkit-line-clamp: 2; /* for webkit */
+  -moz-box-lines: 2; /* for firefox */
+}
+.truncate1 {
+  -webkit-line-clamp: 1; /* for webkit */
+  -moz-box-lines: 1; /* for firefox */
+}

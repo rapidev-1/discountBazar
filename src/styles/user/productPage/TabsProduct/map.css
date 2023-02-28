@@ -1,0 +1,63 @@
+.leaflet-container {
+  z-index: 0;
+  border-radius: 6px;
+  box-shadow: var(--shadow1);
+}
+
+.leaflet-pane.leaflet-map-pane {
+  height: 100%;
+}
+.leaflet-container a[title="A JavaScript library for interactive maps"] {
+  display: none;
+}
+.leaflet-container a[title="A JavaScript library for interactive maps"] + span {
+  display: none;
+}
+.leaflet-routing-alternatives-container {
+  display: none;
+}
+.leaflet-control-attribution.leaflet-control {
+  color: white;
+  background-color: var(--headingColor) !important;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  letter-spacing: 0.5px;
+}
+.vendoriconmap {
+  /* background-color: rebeccapurple; */
+}
+.recalculate {
+  z-index: 400;
+  position: absolute;
+  left: 11px;
+  top: 16%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  display: grid;
+  place-content: center;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid transparent;
+  transition: all 0.1s;
+  box-shadow: var(--shadow1);
+}
+
+.recalculate:hover {
+  background-color: white;
+  border: 1px solid var(--headingColor);
+}
+.recalculate:active {
+  background-color: rgb(243, 243, 243);
+  border-color: transparent;
+  color: var(--headingColor);
+}
+
+@media screen and (max-width: 400px) {
+  .leaflet-container {
+    min-height: 400px !important;
+  }
+  .recalculate {
+    top: 78px;
+    left: 11.5px;
+  }
+}

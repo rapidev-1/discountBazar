@@ -24,5 +24,17 @@ export const map = {
     search: {
         title: "Search and Shop with Ease",
         url: <BreadCrumbs value={"Search"} />
+    },
+    faq: {
+        title: "FAQ",
+        url: <BreadCrumbs value={"faq"} />
+    },
+    complete: {
+        title: "Order Completed",
+        url: <BreadCrumbs value={"Order Complete"} />
+    },
+    compare: {
+        title: "Find the Best Product for You",
+        url: <BreadCrumbs value={"Product Compare"} />
     }
 }

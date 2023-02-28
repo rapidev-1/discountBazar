@@ -3,7 +3,7 @@ html {
   --py: 0.6%;
   --pinkColor: #fb2e86;
   --purpleColor: #7e33e0;
-  --linkColor: #0d0e43; 
+  --linkColor: #0d0e43;
   --headingColor: #151875;
   --singleshopBg: #0d0e43;
   --textColorLigher: #8a8fb9;
@@ -13,13 +13,13 @@ html {
   --headingPurpleColor2: #1a0b5b;
   --pinkColorLighter: #e7e4f8;
   --grayBlueBg: #f2f0ff;
-  --lightblueBg: #f6f7fb; 
-  --grayBlueBg: #f2f0ff;
+  --lightblueBg: #f6f7fb;
   --grey: #f7f7f7;
-  --lightblueBg :#F9F8FE;
+  /* --lightblueBg: #f9f8fe; */
   --green: #08d15f;
-  --textpara :#A9ACC6;
+  --textpara: #a9acc6;
   --shadow1: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%);
+  --shadow2: 0px 0px 12px 5px rgba(246, 246, 253, 0.9);
   --Lato: "Lato";
   --Josefin: "Josefin Sans";
 }

@@ -1,7 +1,7 @@
 import { Grid, Row, Typography } from 'antd'
 import React from 'react'
 
-function HeadingCustom({ heading, level }) {
+function HeadingCustom({ heading, level, small }) {
     const breakpoints = Grid.useBreakpoint()
     const condition = breakpoints['sm'] || breakpoints['xs']
     return (
@@ -10,7 +10,7 @@ function HeadingCustom({ heading, level }) {
                 <Typography.Title
                     level={level ? level : 2}
                     ellipsis={{ rows: condition ? 2 : 1 }}
-                    className="HeadingDark HeadingCustom">
+                    className={`HeadingDark HeadingCustom ${small ? "small" : ""}`}>
                     {heading}
                 </Typography.Title>
             </Typography>

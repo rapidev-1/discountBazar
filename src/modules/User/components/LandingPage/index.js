@@ -7,7 +7,7 @@ const BannerProduct = React.lazy(() => import("./subcomponents/BannerProduct"))
 const TopCategories = React.lazy(() => import("./subcomponents/TopCategories"))
 const LatestProducts = React.lazy(() => import("./subcomponents/LatestProducts"))
 const TrendingProducts = React.lazy(() => import("./subcomponents/TrendingProducts"))
-const Featureproducts = React.lazy(() => import("./subcomponents/FreaturedProducts"))
+const Featureproducts = React.lazy(() => import("./subcomponents/FeaturedProducts"))
 const BannerShopNow = React.lazy(() => import("./subcomponents/BannerShopNow"))
 const DiscountItem = React.lazy(() => import("./subcomponents/DiscountProduct"))
 

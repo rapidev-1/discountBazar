@@ -2,10 +2,13 @@ import React from 'react'
 import { Route, Routes } from "react-router-dom"
 import { ContactPage, LandingPage, LoginPage, MultiShop, ProductPage, SignupPage, SingleShop } from './components'
 import { AboutPage } from "./components";
-import UserLayout from '../../common/layout/UserLayout'
+import UserLayout from "../../layout/UserLayout"
 import GetLoader from '../../common/GetLoader';
+const FAQS = React.lazy(() => import("./components/Faqs"))
 const ErrorPage = React.lazy(() => import("../../common/Errors/404"))
 const SearchPage = React.lazy(() => import('./components/SearchPage'));
+const OrderComplete = React.lazy(() => import('./components/ordercomplete'));
+const ProductCompare = React.lazy(() => import('./components/ProductCompare'));
 
 function UserRoutes() {
   return (
@@ -18,7 +21,10 @@ function UserRoutes() {
           <Route path="vendorshop/:username" element={<SingleShop />} />
           <Route path="product/:id" element={<ProductPage />} />
           <Route path="search" element={<SearchPage />} />
+          <Route path="faqs" element={<FAQS />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="ordercomplete" element={<OrderComplete />} />
+          <Route path="productcompare" element={<ProductCompare />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
         <Route path="login" element={<LoginPage />} />

@@ -1,11 +1,13 @@
 import { Col, Row } from 'antd'
 import React, { Fragment } from 'react'
 import Banner from "../../../../common/Banner"
-import SearchPageProductsCard from './subcomponents/ProductsCard'
+import FilterBar from '../../../../common/FilterBar'
+import ProductsCard2 from '../../../../common/Product/card2'
 function SearchPage() {
     return (
         <Fragment>
             <Banner title={"search"} />
+            <FilterBar />
             <Row
                 gutter={[20, 15]}
                 justify={"space-between"}
@@ -14,7 +16,7 @@ function SearchPage() {
                     Array(10).fill(null).map((e, i) => {
                         return (
                             <Col span={24}>
-                                <SearchPageProductsCard />
+                                <ProductsCard2 />
                             </Col>
                         )
                     })

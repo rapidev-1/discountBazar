@@ -1,0 +1,8 @@
+.showicons {
+  opacity: 1;
+  position: static;
+  transform: unset;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
