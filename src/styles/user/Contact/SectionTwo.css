@@ -1,9 +1,33 @@
 .contact-sectionTwo-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-sectionTwo-Left{
 flex: 1;
 }
 .contact-sectionTwo-Right{
 flex: 1;
+/* height: 100%; */
+}
+.contact-sectionTwo-Right > img{
+    max-width:500px;
+    min-width:200px;
+    height: 480px;
+    height:100%;
+    object-fit: contain;
+    /* border: 1px solid; */
+}
+@media screen and (max-width:1200px) {
+.contact-sectionTwo-Right>img {
+        max-width: 450px;
+        min-width: 200px;
+        height: 480px;
+    }
+}
+@media screen and (max-width:1024px) {
+.contact-sectionTwo-container {
+flex-direction: column;
+padding: 0%;
+}
 }

@@ -1,3 +1,20 @@
 .form-container{
-border: 1px solid;
+/* border: 1px solid; */
+}
+.form-container > p{
+/* border: 1px solid; */
+width: 100%;
+font-size: 16px;
+color: var(--textColorLigher);
+}
+.form-container > h1{
+/* border: 1px solid; */
+font-size: 36px;
+color: var(--headingColor);
+}
+@media screen and (max-width:500px) {
+.form-container>h1 {
+        font-size: 26px;
+        color: var(--headingColor);
+    }
 }
