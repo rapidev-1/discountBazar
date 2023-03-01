@@ -1,5 +1,7 @@
 import React from "react";
+
 import { Button, Checkbox, Form, Input } from "antd";
+import TextArea from "antd/es/input/TextArea";
 const onFinish = (values) => {
   console.log("Success:", values);
 };
@@ -25,7 +27,7 @@ function Forms() {
             span: 16,
           }}
           style={{
-            maxWidth: 1300,
+            maxWidth: 1900,
           }}
           initialValues={{
             remember: true,
@@ -35,49 +37,65 @@ function Forms() {
           autoComplete="off"
         >
           <Form.Item
-            label="Username"
+            wrapperCol={{
+              offset: 1,
+              span: 16,
+            }}
             name="username"
             rules={[
               {
                 required: true,
-                message: "Please input your username!",
+                message: "Username",
               },
             ]}
           >
-            <Input />
+            <Input placeholder="Username" />
           </Form.Item>
-
           <Form.Item
-            label="Password"
-            name="password"
+            wrapperCol={{
+              offset: 1,
+              span: 16,
+            }}
+            name="email"
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
+                message: "Email",
               },
             ]}
           >
-            <Input.Password />
+            <Input placeholder="Email" />
           </Form.Item>
-
           <Form.Item
-            name="remember"
-            valuePropName="checked"
             wrapperCol={{
-              offset: 8,
+              offset: 1,
+              span: 16,
+            }}
+            name="subject"
+            rules={[
+              {
+                required: true,
+                message: "Subject",
+              },
+            ]}
+          >
+            <Input placeholder="Subject" />
+          </Form.Item>
+          <Form.Item
+            wrapperCol={{
+              offset: 1,
               span: 16,
             }}
           >
-            <Checkbox>Remember me</Checkbox>
+            <TextArea placeholder="Type your message" rows={4} />
           </Form.Item>
-
           <Form.Item
             wrapperCol={{
-              offset: 8,
+              offset: 1,
               span: 16,
             }}
           >
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" className="btn" htmlType="submit">
               Submit
             </Button>
           </Form.Item>
