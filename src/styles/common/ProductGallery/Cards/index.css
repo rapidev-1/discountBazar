@@ -25,9 +25,10 @@
 
 .cardGallery-card-icons {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 30px;
   width: 100%;
+  max-width: 50%;
   height: 40%;
   display: flex;
   transform: translateX(-30px);
