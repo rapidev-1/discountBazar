@@ -5,7 +5,6 @@
   padding-inline: var(--px);
   width: 100%;
   margin: auto;
-  /* border: 1px solid; */
   padding: 30px;
   background-color: var(--lightblueBg);
 }
@@ -13,4 +12,10 @@
   font-size: 22px !important;
   color: var(--headingColor);
   font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .ant-tabs .ant-tabs-tab {
+    font-size: 18px !important;
+  }
 }

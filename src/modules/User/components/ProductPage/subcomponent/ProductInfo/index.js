@@ -16,7 +16,7 @@ function ProductInfo() {
         justify={"space-between"}
         gutter={[10, 10]}
         className="product-info">
-        <Col lg={11} md={10} sm={24} xs={24}>
+        <Col lg={10} md={10} sm={24} xs={24}>
           <Image.PreviewGroup>
             <Row gutter={[5, 5]} className="imgcol">
               <Col
@@ -48,8 +48,8 @@ function ProductInfo() {
             </Row>
           </Image.PreviewGroup>
         </Col>
-        <Col lg={13} md={14} sm={24} xs={24} className="textCol">
-          <div className="SectionPadding">
+        <Col lg={14} md={14} sm={24} xs={24} className="textCol">
+          <div className="SectionPadding" style={{ height: "100%" }}>
             <Row>
               <Col span={24}>
                 <HeadingCustom
@@ -72,7 +72,26 @@ function ProductInfo() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius expedita officiis, blanditiis consectetur numquam fuga sapiente iure? Non rerum eum nisi voluptatem nulla, adipisci consequuntur aspernatur iste quas, sunt saepe.
                 </p>
               </Col>
-              <Col span={24} className="flex vfcenter" style={{ gap: "5px" }} >
+              <Col span={24} >
+                <span>
+                  <HeadingCustom
+                    small
+                    heading={'Categories'} />
+                </span>
+                <p className="textLighter truncate4">
+                  Cricket, FootBall, Hocky
+                </p>
+              </Col>
+              <Col span={24} >
+                <Button className="btn">
+                  <DiscountBazarIcon icon={"wishlist"} text="add to wishlist" />
+                </Button>
+
+              </Col>
+              <Col
+                span={24}
+                className="flex vfcenter"
+                style={{ gap: "5px", marginTop: "10px" }} >
                 <Button className="btn">
                   <DiscountBazarIcon text={"add to cart"} icon={"cart"} />
                 </Button>

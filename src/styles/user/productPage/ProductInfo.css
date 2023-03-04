@@ -5,7 +5,7 @@
   padding-inline: calc(var(--py) * 0.4);
 }
 .imgcol {
-  height: 370px;
+  height: 440px;
 }
 .imgcol > .ant-col,
 .imgcol .ant-row {
@@ -32,7 +32,7 @@
   margin-bottom: 10px !important;
 }
 .textCol {
-  padding-left: 30px !important;
+  padding-inline: 30px !important;
 }
 .resetmargin {
   margin-left: 0px !important;
@@ -50,14 +50,31 @@
   }
   .imgcol > .ant-col:last-of-type {
     position: relative;
-    height: 74%;
+    height: 75%;
   }
   .imgcol .ant-row > .ant-col {
-    max-height: 25%;
+    height: 100px;
     min-width: 33.22%;
     max-width: 33.22%;
   }
   .imgcol .ant-row > .ant-col:last-of-type {
     padding-right: 0 !important;
+  }
+  .product-info .SectionPadding {
+    padding-bottom: unset;
+  }
+  .smallerimages .ant-row,
+  .smallerimages {
+    height: max-content !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .product-info {
+    padding: 1rem !important;
+  }
+
+  .imgcol .ant-row > .ant-col:first-of-type {
+    padding-left: 0 !important;
   }
 }
