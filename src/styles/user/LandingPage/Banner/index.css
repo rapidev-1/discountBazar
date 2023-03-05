@@ -128,9 +128,6 @@
   .Banner {
     min-height: 600px;
   }
-  .Banner-slider {
-    margin-top: 0;
-  }
   .banner-gradient-one {
     width: 250px !important;
     height: 250px !important;
@@ -139,6 +136,7 @@
   }
   .Banner-right img {
     max-width: 80%;
+    max-height: 210px;
   }
   .banner-gradient-three,
   .banner-gradient-two {
