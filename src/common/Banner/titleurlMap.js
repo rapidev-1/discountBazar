@@ -36,5 +36,9 @@ export const map = {
     compare: {
         title: "Find the Best Product for You",
         url: <BreadCrumbs value={"Product Compare"} />
+    },
+    profile: {
+        title: "My Account",
+        url: <BreadCrumbs value={"profile"} />
     }
 }
