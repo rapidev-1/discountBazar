@@ -1,4 +1,5 @@
 import { Table } from 'antd';
+import { useSelector } from "react-redux"
 const columns = [
     {
         title: 'Properties',
@@ -53,23 +54,37 @@ const data = [
         m2: 'true',
     },
     {
-        key: '1',
+        key: '11',
         name: 'John Brown',
         m1: 'true',
         m2: 'false',
     },
     {
-        key: '2',
+        key: '22',
         name: 'Jim Green',
         m1: 'false',
         m2: 'true',
     },
     {
-        key: '3',
+        key: '33',
         name: 'Joe Black',
         m1: 'true',
         m2: 'false',
     },
 ];
-const CompareItems = () => <Table columns={columns} dataSource={data} pagination={false} />;
+const CompareItems = () => {
+
+    const state = useSelector(state => state.compare)
+    const { p1, p2, loading, } = state;
+    // console.log({ p1, p2 ,loading});
+    return (
+        <Table
+            bordered={false}
+            columns={columns}
+            dataSource={data}
+            pagination={false}
+            className='comparetable'
+        />
+    )
+};
 export default CompareItems;

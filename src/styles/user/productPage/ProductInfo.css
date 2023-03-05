@@ -3,6 +3,7 @@
   box-shadow: var(--shadow1);
   padding-block: calc(var(--py) * 1.5);
   padding-inline: calc(var(--py) * 0.4);
+  user-select: none;
 }
 .imgcol {
   height: 440px;

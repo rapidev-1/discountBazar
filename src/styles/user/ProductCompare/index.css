@@ -1,6 +1,6 @@
-.CompareSearchBar {
-}
 @import "./DropDown/index.css";
+@import "./comparetable/index.css";
+
 .CompareSearchBarCol {
   background-color: var(--lightblueBg);
   border-radius: 6px;
