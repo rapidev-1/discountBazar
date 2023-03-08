@@ -1,0 +1,62 @@
+.paymentInfo{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.paymentInfo-container-up-heading{
+    font-size: 18px;
+    color: var(--headingColor);
+}
+.paymentInfo > h1{
+    font-size: 24px;
+    color: var(--headingColor);
+}
+.paymentInfo-container{
+    display: flex;
+    /* border: 1px solid; */
+    background-color: var(--bgPayment);
+    border-radius: 5px;
+    padding: 20px;
+    width: 98%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    color: var(--textPayment);
+}
+.paymentInfo-container-up{
+    width: 100%;
+    /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; 
+    }
+.paymentInfo-container-down{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.payment-strongText{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.paymentInfo-container-input{
+    background-color: transparent !important;
+    color: var(--textPayment) !important;
+    border: none;
+    font-size: 16px !important;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--textPayment); 
+}
+.paymentInfo-container-input:hover{
+    box-shadow: none; 
+}
+.paymentInfo-container-input:active{
+    box-shadow: none !important; 
+}

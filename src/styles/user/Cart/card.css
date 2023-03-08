@@ -1,0 +1,24 @@
+.cart-card{
+    /* border: 1px solid; */
+}
+.border{
+    border: 1px solid;
+}
+.cart-card-image{
+    position: relative;
+    width: 83px;
+    height: 87px;
+    object-fit: cover;
+}
+.cart-card-iconClose{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.cart-card-textOne{
+    font-size: 14px;
+}
+.cart-card-textTwo{
+font-size: 14px;
+color: var(--grayText);
+}

@@ -1,0 +1,16 @@
+.payment-main{
+    display: flex;
+}
+.payment-main-left{
+    flex: 2;
+    border: 1px solid;
+}
+.payment-main-right{
+    flex: 1;
+    border: 1px solid;
+}
+@media screen and (max-width:1024px) {
+    .payment-main {
+            flex-direction: column;
+        }
+}

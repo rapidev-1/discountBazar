@@ -10,13 +10,19 @@ html {
   --bgSoft: rgb(254, 254, 254);
   --bgColor2: #eeeffb;
   --bgCards: #ebf4f3;
+  --bgPayment: #F8F8FD;
   --headingPurpleColor2: #1a0b5b;
   --pinkColorLighter: #e7e4f8;
   --grayBlueBg: #f2f0ff;
+  --grayBg: #E8E6F1;
+  --grayText: #A1A8C1;
   --lightblueBg: #f6f7fb;
   --grey: #f7f7f7;
+  --textPayment:#C1C8E1;
+  --shopcartBorder:#C5CBE3;
   /* --lightblueBg: #f9f8fe; */
   --green: #08d15f;
+  --greenBtn: #19D16F;
   --textpara: #a9acc6;
   --shadow1: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%);
   --shadow2: 0px 0px 12px 5px rgba(246, 246, 253, 0.9);
