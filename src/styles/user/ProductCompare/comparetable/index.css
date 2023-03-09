@@ -1,0 +1,20 @@
+.comparetable .ant-table-thead tr > th {
+  background-color: var(--lightblueBg);
+  /* border: 1.4px solid var(--pinkColorLighter); */
+  border-inline-color: transparent;
+  color: var(--headingColor);
+  font-weight: 700;
+  font-family: var(--Josefin);
+  font-size: 1.2rem;
+}
+.comparetable .ant-table-thead tr {
+  box-shadow: var(--shadow3);
+}
+
+.comparetable table {
+  border-spacing: 0 20px;
+}
+.comparetable tbody tr {
+  background-color: var(--lightblueBg);
+  box-shadow: var(--shadow3);
+}

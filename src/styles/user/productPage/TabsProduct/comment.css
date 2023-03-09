@@ -1,0 +1,35 @@
+.custom-comment {
+  margin-left: 24px;
+}
+
+.custom-comment .comment-reply {
+  margin-left: 48px;
+}
+
+.custom-comment .ant-list-item-meta-avatar {
+  margin-right: 16px;
+}
+
+.custom-comment .ant-form-item {
+  margin-bottom: 0;
+}
+
+.custom-comment .ant-form-item-control-input-content {
+  height: 80px;
+}
+
+.custom-comment .ant-form-item-control-input-content textarea {
+  height: 100%;
+}
+
+.custom-comment .ant-btn-group {
+  margin-right: 8px;
+}
+
+.custom-comment .ant-btn-link {
+  padding-left: 0;
+}
+
+.custom-comment .ant-btn-link:hover {
+  text-decoration: underline;
+}

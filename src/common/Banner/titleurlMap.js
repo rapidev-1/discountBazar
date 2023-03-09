@@ -46,3 +46,4 @@ export const map = {
     url: <BreadCrumbs value={"Product Compare"} />,
   },
 };
+ 

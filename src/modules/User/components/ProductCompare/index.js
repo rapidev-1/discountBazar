@@ -3,9 +3,9 @@ import React, { Fragment } from 'react'
 import Banner from '../../../../common/Banner'
 import CompareItems from './CompareItems'
 import ProductCompareHeading from './Heading'
-import CompareSearchBar from './Heading/CompareSearchBar'
-
+import CompareSearchBar from './CompareSearchBar'
 function ProductCompare() {
+
     return (
         <Fragment>
             <Banner title={"compare"} />

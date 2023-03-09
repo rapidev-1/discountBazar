@@ -1,36 +1,39 @@
 import { Col, Input, Row, Select } from 'antd'
 import React, { useEffect, useState } from 'react'
 import CompareProductDropDown from './DropDown'
-
+import { useSelector, useDispatch } from "react-redux"
+import {
+    setp1, setp2, setactive
+} from "../../../../../Store/Features/prodcutCompare"
 function CompareSearchBar() {
-    const [p1, setp1] = useState()
-    const [p2, setp2] = useState()
-    const [active, setative] = useState()
+    const state = useSelector(state => state.compare)
+    const { p1, p2, active } = state;
+    const dispatch = useDispatch()
     const [typed, settyped] = useState(false)
     useEffect(() => {
         const event = window.addEventListener("keydown", (e) => {
             if (e.keyCode === 27) {
                 settyped(false)
-                setative(null)
+                dispatch(setactive())
             }
         })
         let id = setTimeout(() => {
             if ((active === 1 && p1) || (active === 2 && p2))
                 settyped(true)
-        }, 1500);
+        }, 500);
         return () => {
             clearTimeout(id)
             window.removeEventListener("keypress", event)
         }
-    }, [p1, p2, active])
+    }, [p1, p2, active, dispatch])
     const handleinput = (active, e) => {
         settyped(false)
-        setative(active)
+        dispatch(setactive(active))
         if (active === 1) {
-            setp1(e)
+            dispatch(setp1(e))
         }
         else {
-            setp2(e)
+            dispatch(setp2(e))
         }
     }
     return (
@@ -91,7 +94,7 @@ function CompareSearchBar() {
                         </Row>
                     </Col>
                 </Row>
-                {typed ? <CompareProductDropDown value={p1 || p2} /> : null}
+                {typed ? <CompareProductDropDown /> : null}
 
             </Col>
         </Row>

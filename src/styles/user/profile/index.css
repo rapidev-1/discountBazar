@@ -1,0 +1,25 @@
+.profileRow .ant-col {
+  border-radius: 6px;
+  padding: 0.8rem;
+  background-color: var(--lightblueBg);
+  box-shadow: var(--shadow1);
+}
+
+.profilemenu {
+  background-color: var(--lightblueBg);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profileRow .ant-col .profilemenu {
+  border-inline-end: unset;
+  max-height: 200px;
+}
+.profilemenu::before {
+  display: none;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .profileRow {
+    gap: 1rem;
+  }
+}
