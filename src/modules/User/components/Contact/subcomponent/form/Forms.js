@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, Col, Row, Checkbox, Form, Input } from "antd";
+import { Button, Col, Row, Form, Input } from "antd";
 import TextArea from "antd/es/input/TextArea";
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -19,7 +19,7 @@ function Forms() {
       </p>
       <div className="form-container-inputs">
         <Row gutter={[16, 6]}>
-          <Col span={12} xs={{ span: 24 }}>
+          <Col xl={12} lg={12} md={12} sm={12} xs={24}>
             <Form.Item
               name="username"
               rules={[
@@ -32,7 +32,7 @@ function Forms() {
               <Input placeholder="Your Username" />
             </Form.Item>
           </Col>
-          <Col span={12} xs={{ span: 24 }}>
+          <Col xl={12} lg={12} md={12} sm={12} xs={24}>
             <Form.Item
               name="emails"
               rules={[

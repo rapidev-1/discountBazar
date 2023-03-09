@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom"
+import { Cart, PaymentPage } from './components'
+
 import { AboutPage } from "./components";
 import UserLayout from "../../layout/UserLayout"
 import GetLoader from '../../common/GetLoader';
@@ -35,6 +37,8 @@ function UserRoutes() {
           <Route path="productcompare" element={<ProductCompare />} />
           <Route path="vendorshop/:username" element={<SingleShop />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="checkout" element={<PaymentPage />} />
+          <Route path="cart" element={<Cart />} />
         </Route>
         <Route path="login" element={<LoginPage />} />
         <Route path="signup" element={<SignupPage />} />
