@@ -5,36 +5,28 @@ function Main() {
   return (
     <div className="section cart-container">
       <div align="middle" className="cart-container-left">
-        <Row align="middle" className="border" gutter={8}>
-          <Col xxl={12} xl={12} lg={8} md={8} sm={8} xs={8}>
+        <Row align="middle" className="" gutter={24}>
+          <Col xxl={12} xl={12} lg={8} md={8} sm={8} xs={6}>
             <h1>Product</h1>
           </Col>
-          <Col  xxl={4} xl={4} lg={5} md={5} sm={5} xs={5}>
+          <Col xxl={4} xl={4} lg={5} md={5} sm={5} xs={5}>
             <h1>Price</h1>
           </Col>
           <Col xxl={4} xl={4} lg={6} md={6} sm={6} xs={6}>
             <h1>Quantity</h1>
           </Col>
-          <Col
-            className="border"
-            xxl={4}
-            xl={4}
-            lg={5}
-            md={5}
-            sm={5}
-            xs={5}
-          >
+          <Col className="" xxl={4} xl={4} lg={5} md={5} sm={5} xs={5}>
             <h1>Total</h1>
           </Col>
         </Row>
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
+        <ProductCart priceTag={false} />
       </div>
       <div className="cart-container-right">
         <div className="SectionPadding cart-right-up">

@@ -8,12 +8,12 @@ function PaymentInfo() {
       <div className="paymentInfo-container">
         <div className="paymentInfo-container-up">
           <Row gutter={[6, 24]}>
-            <Col span={12}>
+            <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <h1 className="paymentInfo-container-up-heading">
                 Contact Information
               </h1>
             </Col>
-            <Col span={12}>
+            <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <strong className="payment-strongText">
                 Already have an account? Log in
               </strong>
@@ -37,13 +37,13 @@ function PaymentInfo() {
             </Col>
           </Row>
           <Row gutter={[24, 24]}>
-            <Col span={12}>
+            <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <Input
                 className="paymentInfo-container-input"
                 placeholder="First Name"
               />
             </Col>
-            <Col span={12}>
+            <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <Input
                 placeholder="Last Name"
                 className="paymentInfo-container-input"
@@ -75,13 +75,13 @@ function PaymentInfo() {
             </Col>
           </Row>
           <Row gutter={24}>
-            <Col span={12}>
+            <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <Input
                 className="paymentInfo-container-input"
                 placeholder="Pakistan"
               />
             </Col>
-            <Col span={12}>
+            <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <Input
                 placeholder="Postal Code"
                 className="paymentInfo-container-input"
