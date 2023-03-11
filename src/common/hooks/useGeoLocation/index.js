@@ -1,21 +1,28 @@
 import { useEffect, useRef, useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { setaddress, setcoordsu, setLoading } from "../../../Store/Features/mapslice"
 import useNotifications from "../useNotifications"
 
 function useGeolocation() {
-    const [coordinates, setCoordinates] = useState([])
-    const [address, setAddress] = useState("")
     const [open, setOpen] = useState(false)
-    const [loading, setloading] = useState(false)
     const { openNotification } = useNotifications()
+    const dispatch = useDispatch()
+    const state = useSelector(state => state.map.coordu)
+    const [coords, setcoords] = useState([])
 
     const API_URL = "https://nominatim.openstreetmap.org/reverse"
 
-    function reverseGeocode(latitude, longitude) {
+    async function reverseGeocode(latitude, longitude) {
         const url = `${API_URL}?format=json&lat=${latitude}&lon=${longitude}`
-        return fetch(url)
-            .then(response => response.json())
-            .then(data => data.display_name)
-            .catch(error => console.log(error))
+        try {
+            const response = await fetch(url)
+            const data = await response.json()
+
+            dispatch(setaddress(data.display_name))
+            return data.display_name
+        } catch (error) {
+            return console.log(error)
+        }
     }
 
 
@@ -23,7 +30,7 @@ function useGeolocation() {
         navigator.permissions
             .query({ name: "geolocation" })
             .then(async (permissionStatus) => {
-                setloading(true)
+                dispatch(setLoading(true))
                 const state = permissionStatus.state
                 if (state === "granted" || state === "prompt" || state === "denied") {
                     if (state === 'denied' || state === 'prompt') {
@@ -31,29 +38,32 @@ function useGeolocation() {
                     }
                     navigator.geolocation.getCurrentPosition(
                         async (position) => {
-                            setCoordinates([position.coords.latitude, position.coords.longitude])
-                            await reverseGeocode(position.coords.latitude, position.coords.longitude).then(address => {
-                                setAddress(address)
-                            }
-                            )
+                            const coords = [position.coords.latitude, position.coords.longitude]
+                            setcoords(coords)
+                            dispatch(setcoordsu(coords))
+                            await reverseGeocode(position.coords.latitude, position.coords.longitude)
+
                         },
                         (error) => console.log(error)
                     )
                 } else {
                     setOpen("Location permission not granted")
                 }
-                setloading(false)
+                dispatch(setLoading(false))
             })
 
 
     }
-
+    useEffect(() => {
+        if (coords[0] === state[0] && coords[1] === state[1])
+            return
+        reverseGeocode(state[0], state[1])
+    }, [state])
     useEffect(() => {
         requestLocationPermission()
         return () => {
-            setloading(false)
+            dispatch(setLoading(false))
             setOpen(false)
-            setAddress(false)
         }
     }, [])
 
@@ -65,7 +75,7 @@ function useGeolocation() {
             setOpen(false)
         }
     }
-    return { coordinates, address, loading }
+    return { reverseGeocode }
 }
 
 export default useGeolocation

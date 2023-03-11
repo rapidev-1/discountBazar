@@ -1,11 +1,21 @@
 import { Col, Image, Row, Typography } from 'antd'
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import useGeolocation from '../../../../../common/hooks/useGeoLocation';
 import Map from '../../../../../common/map'
+import { setdefault } from '../../../../../Store/Features/mapslice';
 
 function User() {
     const src = false;
-    const { coordinates, address, loading } = useGeolocation()
+    useGeolocation()
+    const dispatch = useDispatch()
+    const { address, coordu, loading } = useSelector(state => state.map)
+
+    useEffect(() => {
+        const lat1 = 33.683739
+        const lng1 = 73.011259
+        dispatch(setdefault([lat1, lng1]))
+    }, [])
 
     return (
         <Row justify={"space-between"} className="profileSub User">
@@ -24,12 +34,15 @@ function User() {
                         <Fragment>
                             <h3><span>{address}</span></h3>
                             {
-                                (coordinates.length !== 0) ?
+                                (coordu.length !== 0) ?
                                     <Map
+                                        zoom={16}
                                         height={300}
                                         routing={false}
-                                        la1={coordinates[0]}
-                                        ln1={coordinates[1]} />
+                                    // la1={coordu[0]}
+                                    // ln1={coordu[1]} 
+
+                                    />
                                     : null
                             }
                         </Fragment>

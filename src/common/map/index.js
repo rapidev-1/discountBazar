@@ -3,22 +3,34 @@ import { Fragment, useRef, useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import DiscountBazarIcon from '../Icons'
 import RoutingMachine from './RouteMachine'
-const Map = ({ height, routing, la1, la2, ln1, ln2 }) => {
-  console.log(la1, ln1);
-  const lat1 = la1 ? la1 : 33.683739
-  const lng1 = ln1 ? ln1 : 73.011259
+import { useSelector, useDispatch } from "react-redux"
+import { setcoordsu } from '../../Store/Features/mapslice'
+
+const Map = ({ height, routing, la1, la2, ln1, ln2, zoom }) => {
+  // const lat1 = la1 ? la1 : 33.683739
+  // const lng1 = ln1 ? ln1 : 73.011259
   const lat2 = la2 ? la2 : 33.64472
   const lng2 = ln2 ? ln2 : 72.98944
-  let center = routing ? [(lat1 + lat2) / 2, (lng1 + lng2) / 2] : [lat1, lng1]
 
-  const timer = 3000
+  const dispatch = useDispatch();
+  const state = useSelector(state => state.map)
+  const userp = state['coordu']
+  const vendorp = [lat2, lng2] || state['coordv'];
+  // const defaultcoords = state.defaultcoords;
+  const timer = 3000;
+  // const [userp, setuserp] = useState([lat1, lng1])
+  // const [vendorp, setvendorp] = useState([lat2, lng2])
+  const center =
+    routing ? [(userp[0] + vendorp[0]) / 2, (userp(1) + vendorp(1)) / 2] :
+      userp
+
   const [reCalc, setReCalc] = useState(false)
   const centered = useRef(false)
 
   const ReaCalculate = () => {
     console.log("called");
     const map = useMap();
-    map.setView([lat1, lng1], 16);
+    // map.setView(defaultcoords, 16);
     setReCalc(false)
     return null;
   }
@@ -32,27 +44,43 @@ const Map = ({ height, routing, la1, la2, ln1, ln2 }) => {
     return null;
   }
 
+  const mapRef = useRef(null)
+  if (mapRef.current) {
+    mapRef.current.on('click', (e) => {
+      if (e.containerPoint.x < 50) return
+      const latlng = e.latlng
+      // return console.log(latlng);
+      dispatch(setcoordsu([latlng['lat'], latlng['lng']]))
+    })
+  }
 
-  let markericons = ".leaflet-marker-icon"
-  markericons = document.querySelectorAll(markericons)
+
+  // let markericons = ".leaflet-marker-icon"
+  // markericons = document.querySelectorAll(markericons)
   // markericons is array of marker icons in map, we can change icon by markericons[0].src=""
+
+
 
   return (
     <MapContainer
       trackResize
-      zoom={14}
+      zoom={zoom ? zoom : 14}
       style={{
         minHeight: height ? height : 500,
       }}
       center={center}
-      scrollWheelZoom={true} >
+      scrollWheelZoom={true}
+      ref={mapRef}
+      inertiaDeceleration
+
+    >
 
 
       <TileLayer
         attribution='Discount Bazar'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[lat1, lng1]} >
+      <Marker position={userp}>
         <Popup
           closeButton={false}
           className='youiconmap'>
@@ -61,7 +89,7 @@ const Map = ({ height, routing, la1, la2, ln1, ln2 }) => {
       </Marker>
       {
         routing ?
-          <Marker autoPan={true} position={[lat2, lng2]}>
+          <Marker autoPan={true} position={vendorp}>
             <Popup
               closeButton={false}
               className='vendoriconmap'>
@@ -81,8 +109,9 @@ const Map = ({ height, routing, la1, la2, ln1, ln2 }) => {
         routing ?
           <Fragment>
 
-            <RoutingMachine destination={[lat2, lng2]} source={[lat1, lng1]} />
-            {centered.current === false && <ChangeView center={[lat1, lng1]} zoom={18} />}
+            <RoutingMachine destination={vendorp} source={userp} />
+            {centered.current === false && <ChangeView
+              center={userp} zoom={18} />}
           </Fragment> : null
       }
     </MapContainer >
