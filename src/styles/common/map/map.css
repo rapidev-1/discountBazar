@@ -29,27 +29,25 @@
 .recalculate {
   z-index: 400;
   position: absolute;
-  left: 11px;
-  top: 16%;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 6px;
+  left: 10.2px;
+  top: 80px;
+  width: 2.07rem;
+  height: 2.1rem;
+  border-radius: 4px;
   display: grid;
   place-content: center;
-  background-color: rgb(243, 243, 243);
+  background-color: white;
   border: 1px solid transparent;
   transition: all 0.1s;
-  box-shadow: var(--shadow1);
+  border: 1px solid var(--headingColor);
+  border: 1.8px solid rgb(188, 188, 188);
 }
 
 .recalculate:hover {
   background-color: white;
-  border: 1px solid var(--headingColor);
 }
 .recalculate:active {
   background-color: rgb(243, 243, 243);
-  border-color: transparent;
-  color: var(--headingColor);
 }
 
 @media screen and (max-width: 400px) {

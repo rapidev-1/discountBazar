@@ -11,6 +11,7 @@
 @import "./FilterBar/index.css";
 @import "./banner/index.css";
 @import "./product/index.css";
+@import "./map/map.css";
 
 html {
   scroll-behavior: smooth;

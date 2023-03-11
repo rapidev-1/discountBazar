@@ -1,0 +1,18 @@
+.profilemenu {
+  background-color: var(--lightblueBg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.profileRow .ant-col .profilemenu {
+  border-inline-end: unset;
+  max-height: 200px;
+}
+.profilemenu::before {
+  display: none;
+}
+.profilemenu .ant-menu-item-active,
+.profilemenu .ant-menu-item-selected {
+  background-color: var(--pinkColor);
+  color: white;
+}

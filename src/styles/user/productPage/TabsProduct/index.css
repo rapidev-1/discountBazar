@@ -1,6 +1,5 @@
 @import "./tabOne.css";
 @import "./tabThree.css";
-@import "./map.css";
 @import "./comment.css";
 .tabs-product {
   padding-inline: var(--px);
