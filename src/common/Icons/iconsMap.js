@@ -7,6 +7,7 @@ import { BsTwitter } from "react-icons/bs"
 import { AiFillInstagram } from "react-icons/ai"
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RiSendPlane2Fill } from "react-icons/ri"
+import { IoNavigateCircleOutline } from "react-icons/io5"
 
 const cn = 'DiscountBazarIcon'
 export const iconmap = {
@@ -22,4 +23,5 @@ export const iconmap = {
   facebook: <FaFacebook className={cn} />,
   twitter: <BsTwitter className={cn} />,
   instagram: <AiFillInstagram className={cn} />,
+  navigate: <IoNavigateCircleOutline className={cn} />,
 };

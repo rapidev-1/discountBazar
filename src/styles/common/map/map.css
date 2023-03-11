@@ -14,7 +14,7 @@
   display: none;
 }
 .leaflet-routing-alternatives-container {
-  display: none;
+  /* display: none; */
 }
 .leaflet-control-attribution.leaflet-control {
   color: white;
@@ -42,7 +42,9 @@
   border: 1px solid var(--headingColor);
   border: 1.8px solid rgb(188, 188, 188);
 }
-
+.recenter {
+  top: 120px;
+}
 .recalculate:hover {
   background-color: white;
 }

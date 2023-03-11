@@ -1,8 +1,12 @@
 import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
+import { useMap } from "react-leaflet";
 
-const createRoutineMachineLayer = ({ destination, source }) => {
+
+const CreateRoutineMachineLayer = ({ destination, source }) => {
+    console.count("called")
+    const map = useMap()
     const instance = L.Routing.control({
         waypoints: [
             L.latLng(source[0], source[1]),
@@ -11,20 +15,33 @@ const createRoutineMachineLayer = ({ destination, source }) => {
         lineOptions: {
             styles: [{ color: "#0081C9", weight: 6 }]
         },
-        show: false,
-        addWaypoints: false,
+        show: true,
+        addWaypoints: true,
         routeWhileDragging: true,
         draggableWaypoints: true,
         fitSelectedRoutes: true,
-        showAlternatives: false,
+        showAlternatives: true,
         createMarker: function () {
             return null;
         }
+
     });
 
+    // instance.on("routesfound", function (e) {
+    //     e.routes[0].coordinates.forEach((coord, i) => {
+    //         setInterval(() => {
+
+    //         }, 1000);
+    //     })
+    // }).addTo(map)
+
     return instance;
+
 };
 
-const RoutingMachine = createControlComponent(createRoutineMachineLayer);
+const RoutingMachine = createControlComponent(CreateRoutineMachineLayer);
 
 export default RoutingMachine;
+
+
+

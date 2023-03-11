@@ -3,11 +3,12 @@ import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useGeolocation from '../../../../../common/hooks/useGeoLocation';
 import Map from '../../../../../common/map'
-import { setdefault } from '../../../../../Store/Features/mapslice';
+import { setcoordsu, setdefault } from '../../../../../Store/Features/mapslice';
 
 function User() {
     const src = false;
     useGeolocation()
+    const userp = useSelector(state => state.map.coordu)
     const dispatch = useDispatch()
     const { address, coordu, loading } = useSelector(state => state.map)
 
@@ -16,6 +17,8 @@ function User() {
         const lng1 = 73.011259
         dispatch(setdefault([lat1, lng1]))
     }, [])
+
+
 
     return (
         <Row justify={"space-between"} className="profileSub User">
@@ -39,9 +42,6 @@ function User() {
                                         zoom={16}
                                         height={300}
                                         routing={false}
-                                    // la1={coordu[0]}
-                                    // ln1={coordu[1]} 
-
                                     />
                                     : null
                             }
