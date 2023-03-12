@@ -44,7 +44,9 @@ function useGeolocation() {
                             await reverseGeocode(position.coords.latitude, position.coords.longitude)
 
                         },
-                        (error) => console.log(error)
+                        (error) => {
+                            setOpen("Turn on your GPS")
+                        }
                     )
                 } else {
                     setOpen("Location permission not granted")
@@ -68,12 +70,12 @@ function useGeolocation() {
     }, [])
 
     const count = useRef(0)
-    if (open !== false) {
-        if (count.current === 0) {
-            openNotification(open)
-            count.current++
-            setOpen(false)
-        }
+    if (open) {
+        // if (count.current === 0) {
+        openNotification(open)
+        count.current++
+        setOpen(false)
+        // }
     }
     return { reverseGeocode }
 }

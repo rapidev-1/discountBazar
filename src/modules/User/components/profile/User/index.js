@@ -3,12 +3,11 @@ import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useGeolocation from '../../../../../common/hooks/useGeoLocation';
 import Map from '../../../../../common/map'
-import { setcoordsu, setdefault } from '../../../../../Store/Features/mapslice';
+import { setdefault } from '../../../../../Store/Features/mapslice';
 
 function User() {
     const src = false;
     useGeolocation()
-    const userp = useSelector(state => state.map.coordu)
     const dispatch = useDispatch()
     const { address, coordu, loading } = useSelector(state => state.map)
 
@@ -39,7 +38,7 @@ function User() {
                             {
                                 (coordu.length !== 0) ?
                                     <Map
-                                        zoom={16}
+                                        zoom={14}
                                         height={300}
                                         routing={false}
                                     />

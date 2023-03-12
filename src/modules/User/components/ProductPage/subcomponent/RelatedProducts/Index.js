@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from "antd";
 import { cards } from '../../../../../../utility/galleryProduct';
 import Card from "../../../../../../common/Product/cards"
- 
+
 function Index({ vendorValue }) {
   return (
     <div className="SectionPadding related-container">
@@ -11,7 +11,7 @@ function Index({ vendorValue }) {
         <Row gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}>
           {cards.map((e, i) => {
             return (
-              <Col xl={6} lg={8} md={12} sm={12} xs={24}>
+              <Col xl={6} lg={8} md={12} sm={12} xs={24} key={i}>
                 <Card
                   key={i}
                   price={e.desc}
